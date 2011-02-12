@@ -61,6 +61,9 @@ nbproject
 # RubyMine
 .idea
 
+#RedCar
+.redcar
+
 # Backup
 *~
 
