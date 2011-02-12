@@ -2,3 +2,12 @@
   Override default refinery homepage styles here.
   These only apply to the homepage of your site.
 */
+
+@import url('refinery/home.css');
+
+#body_content {
+  width: 100%;
+  background: white;
+  color: #333;
+  padding: 20px;
+}
