@@ -38,5 +38,9 @@ module Sof
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+
+    config.to_prepare do
+      Refinery.searchable_models = [Page]
+    end
   end
 end
