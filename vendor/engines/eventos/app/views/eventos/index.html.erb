@@ -1,0 +1,12 @@
+<% content_for :body_content_left do %>
+  <ul id="eventos">
+    <% @eventos.each do |evento| %>
+      <li>
+        <%= link_to "#{evento.inicio.strftime('%d/%m/%Y')} - #{evento.titulo}", evento_url(evento) %>      
+        <%=raw evento.lead %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

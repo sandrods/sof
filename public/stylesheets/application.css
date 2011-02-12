@@ -23,6 +23,13 @@ body {
   width: 30%;
 }
 
+#body_content_left {
+  width: 60%;
+}
+#body_content_right {
+  width: 30%;
+}
+
 #menu ul {
   list-style: none;
   padding: 0px;

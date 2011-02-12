@@ -1,0 +1,20 @@
+nb:
+  plugins:
+    eventos:
+      title: Eventos
+  admin:
+    eventos:
+      index:
+        title: Eventos
+        create_new: Lag en ny Evento
+        reorder: Endre rekkefølgen på Eventos
+        reorder_done: Ferdig å endre rekkefølgen Eventos
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Eventos enda. Klikk på "Lag en ny Evento" for å legge til din første evento.
+      evento:
+        view_live_html: Vis hvordan denne evento ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne evento
+        delete: Fjern denne evento permanent
+  eventos:
+    show:
+      other: Andre Eventos

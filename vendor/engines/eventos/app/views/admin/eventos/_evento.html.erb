@@ -1,0 +1,18 @@
+<li class='clearfix record <%= cycle("on", "on-hover") %>' id="<%= dom_id(evento) -%>">
+  <span class='title'>
+    <%= evento.titulo %>
+    <span class="preview">&nbsp;</span>
+  </span>
+  <span class='actions'>
+    <%= link_to refinery_icon_tag("application_go.png"), evento_url(evento),
+        :title => t('.view_live_html'),
+        :target => "_blank" %>
+    <%= link_to refinery_icon_tag("application_edit.png"), edit_admin_evento_path(evento),
+         :title => t('.edit') %>
+    <%= link_to refinery_icon_tag("delete.png"), admin_evento_path(evento),
+        :class => "cancel confirm-delete",
+        :title => t('.delete'),
+        :confirm => t('message', :scope => 'shared.admin.delete', :title => evento.titulo),
+        :method => :delete %>
+  </span>
+</li>

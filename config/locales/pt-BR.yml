@@ -1,0 +1,18 @@
+pt-BR:
+  plugins:
+    eventos:
+      title: "Agenda"
+
+  eventos:
+    show:
+      other: "Mais eventos"      
+
+  admin:
+    eventos:
+      evento:
+        delete: Apagar este evento
+        edit: Editar este evento
+        view_live_html: Visualizar este evento agora
+      index:
+        no_items_yet: "Sem eventos cadastrados"
+        create_new: "Criar Novo Evento"

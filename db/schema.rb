@@ -10,7 +10,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110212010755) do
+ActiveRecord::Schema.define(:version => 20110212202237) do
+
+  create_table "eventos", :force => true do |t|
+    t.string   "titulo"
+    t.datetime "inicio"
+    t.datetime "fim"
+    t.text     "lead"
+    t.text     "detalhe"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "eventos", ["id"], :name => "index_eventos_on_id"
 
   create_table "images", :force => true do |t|
     t.string   "image_mime_type"
@@ -50,9 +63,9 @@ ActiveRecord::Schema.define(:version => 20110212010755) do
     t.integer  "page_id"
     t.string   "locale"
     t.string   "browser_title"
-    t.string   "title"
     t.string   "meta_keywords"
     t.text     "meta_description"
+    t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

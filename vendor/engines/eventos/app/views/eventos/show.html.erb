@@ -1,0 +1,51 @@
+<% content_for :body_content_title do %>
+  <%= @evento.titulo %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Título</h1>
+    <p>
+      <%=raw @evento.titulo %>
+    </p>
+  </section>
+  <section>
+    <h1>Início</h1>
+    <p>
+      <%=raw @evento.inicio.strftime('%d/%m/%Y %H:%M') %>
+    </p>
+  </section>
+  <section>
+    <h1>Fim</h1>
+    <p>
+      <%=raw @evento.fim.strftime('%d/%m/%Y %H:%M') %>
+    </p>
+  </section>
+  <section>
+    <h1>Lead</h1>
+    <p>
+      <%=raw @evento.lead %>
+    </p>
+  </section>
+  <section>
+    <h1>Detalhe</h1>
+    <p>
+      <%=raw @evento.detalhe %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="eventos">
+      <% @eventos.each do |evento| %>
+        <li>
+          <%= link_to evento.titulo, evento_url(evento) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>
