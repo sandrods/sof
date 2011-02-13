@@ -1,0 +1,24 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    noticias:
+      title: Noticias
+  admin:
+    noticias:
+      index:
+        title: Noticias
+        create_new: CREATE NEW Noticia
+        reorder: REORDR Noticias
+        reorder_done: DUN REORDERIN Noticias
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Noticias YET. CLICK "CREATE NEW Noticia" 2 ADD UR FURST noticia.
+      noticia:
+        view_live_html: VIEW DIS noticia LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS noticia
+        delete: REMOOV DIS noticia FOREVR
+  noticias:
+    show:
+      other: OTHR Noticias

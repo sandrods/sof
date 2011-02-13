@@ -1,0 +1,24 @@
+pt-BR:
+  shared:
+    admin:
+      image_picker:
+        image: imagem
+  plugins:
+    noticias:
+      title: Notícias
+  admin:
+    noticias:
+      index:
+        title: Notícias
+        create_new: Adicionar Notícia
+        reorder: Reordenar Noticias
+        reorder_done: Done Reordering Notícias
+        sorry_no_results: Nenhum resultado encontrado.
+        no_items_yet: Não há Notícias ainda. Clique "Adicionar Notícia" para incluir uma.
+      noticia:
+        view_live_html: Ver esta noticia no site <br/><em>(abre nova janela)</em>
+        edit: Editar esta notícia
+        delete: Remover esta noticia permanentemente
+  noticias:
+    show:
+      other: Outras Notícias

@@ -1,0 +1,20 @@
+nb:
+  plugins:
+    noticias:
+      title: Noticias
+  admin:
+    noticias:
+      index:
+        title: Noticias
+        create_new: Lag en ny Noticia
+        reorder: Endre rekkefølgen på Noticias
+        reorder_done: Ferdig å endre rekkefølgen Noticias
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Noticias enda. Klikk på "Lag en ny Noticia" for å legge til din første noticia.
+      noticia:
+        view_live_html: Vis hvordan denne noticia ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne noticia
+        delete: Fjern denne noticia permanent
+  noticias:
+    show:
+      other: Andre Noticias

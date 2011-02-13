@@ -1,0 +1,24 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    noticias:
+      title: Noticias
+  admin:
+    noticias:
+      index:
+        title: Noticias
+        create_new: Add New Noticia
+        reorder: Reorder Noticias
+        reorder_done: Done Reordering Noticias
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Noticias yet. Click "Add New Noticia" to add your first noticia.
+      noticia:
+        view_live_html: View this noticia live <br/><em>(opens in a new window)</em>
+        edit: Edit this noticia
+        delete: Remove this noticia forever
+  noticias:
+    show:
+      other: Other Noticias

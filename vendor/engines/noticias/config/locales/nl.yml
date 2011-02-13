@@ -1,0 +1,20 @@
+nl:
+  plugins:
+    noticias:
+      title: Noticias
+  admin:
+    noticias:
+      index:
+        title: Noticias
+        create_new: Maak een nieuwe Noticia
+        reorder: Wijzig de volgorde van de Noticias
+        reorder_done: Klaar met het wijzingen van de volgorde van de Noticias
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Noticias. Druk op 'Maak een nieuwe Noticia' om de eerste aan te maken.
+      noticia:
+        view_live_html: Bekijk deze noticia op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze noticia
+        delete: Verwijder deze noticia voor eeuwig
+  noticias:
+    show:
+      other: Andere Noticias
