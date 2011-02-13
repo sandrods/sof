@@ -7,6 +7,7 @@ class CreateEventos < ActiveRecord::Migration
       t.datetime :fim
       t.text :lead
       t.text :detalhe
+      t.string :local
       t.integer :position
 
       t.timestamps

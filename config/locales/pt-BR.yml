@@ -16,3 +16,5 @@ pt-BR:
       index:
         no_items_yet: "Sem eventos cadastrados"
         create_new: "Criar Novo Evento"
+        reorder: "Reordenar os Eventos"
+        reorder_done: "Terminei de reordenar os Eventos"
