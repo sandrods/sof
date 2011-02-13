@@ -10,7 +10,26 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110212233146) do
+ActiveRecord::Schema.define(:version => 20110213030028) do
+
+  create_table "artigos", :force => true do |t|
+    t.string   "titulo"
+    t.datetime "data"
+    t.integer  "arquivo_id"
+    t.integer  "categoria_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "artigos", ["id"], :name => "index_artigos_on_id"
+
+  create_table "categorias", :force => true do |t|
+    t.string   "titulo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "categorias", ["id"], :name => "index_categorias_on_id"
 
   create_table "eventos", :force => true do |t|
     t.string   "titulo"

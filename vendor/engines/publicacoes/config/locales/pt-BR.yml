@@ -1,0 +1,54 @@
+pt-BR:
+  plugins:
+    refinerycms_publicacoes:
+      title: Publicações
+  admin:
+    publicacoes:
+      categorias:
+        categoria:
+          edit: Editar esta categoria
+          delete: Apagar esta categoria para sempre
+        index:
+          no_items_yet: 'Não há categorias ainda. Clique em "%{create}" para adicionar a primeira categoria.'
+      artigos:
+        form:
+          advanced_options: Opções avançadas
+          toggle_advanced_options: Clique aqui para acessar as configurações de meta tag e menu
+          save_as_draft: Salvar como rascunho
+          published_at: Data de publicação
+        index:
+          no_items_yet: 'Ainda não há Posts no Blog. Clique em "%{create}" para adicionar o primeiro post.'
+        post:
+          view_live_html: Ver este comentário <br/><em>(será aberto em outra janela)</em>
+          edit: Editar este post
+          delete: Remover esse post para sempre
+      submenu:
+        categories:
+          title: Categorias
+          manage: Gerenciar
+          new: Criar nova categoria
+        posts:
+          title: Artigos
+          manage: Gerenciar Artigos
+          new: Criar novo Artigo
+  publicacoes:
+    shared:
+      categories:
+        title: Categorias
+      rss_feed:
+        title: Feed RSS
+        subscribe: Assinar
+      posts:
+        other: Últimos Artigos
+        created_at: 'Postado em %{when}'
+        read_more: Continue lendo...
+    categories:
+      show:
+        no_posts: Não há posts aqui ainda.
+    posts:
+      index:
+        no_blog_articles_yet: Ainda não há artigos postados.
+      show:
+        blog_home: Publicações
+        other: Outros posts
+        filed_in: Arquivado em
