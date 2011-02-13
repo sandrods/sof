@@ -76,9 +76,9 @@ ActiveRecord::Schema.define(:version => 20110212233146) do
     t.integer  "page_id"
     t.string   "locale"
     t.string   "browser_title"
-    t.string   "title"
     t.string   "meta_keywords"
     t.text     "meta_description"
+    t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
