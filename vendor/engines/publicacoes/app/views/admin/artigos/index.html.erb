@@ -1,8 +1,8 @@
-<%= render :partial => '/admin/publicacoes/submenu' %>
+<%= render :partial => '/admin/submenu' %>
 <div id='records'>
   <% if searching? %>
     <h2><%= t('shared.admin.search.results_for', :query => params[:search]) %></h2>
-    <% if @blog_posts.any? %>
+    <% if @artigos.any? %>
       <%= render :partial => "artigo",
                  :collection => @artigos %>
     <% else %>
@@ -18,7 +18,7 @@
     <% else %>
       <p>
         <strong>
-          <%= t('.no_items_yet', :create => t('admin.publicacoes.submenu.posts.new')) %>
+          <%= t('.no_items_yet', :create => t('admin.submenu.posts.new')) %>
         </strong>
       </p>
     <% end %>

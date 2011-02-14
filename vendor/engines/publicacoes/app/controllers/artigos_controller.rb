@@ -1,7 +1,7 @@
-class Publicacoes::ArtigosController < BlogController
+class ArtigosController < PublicacoesController
 
-  before_filter :find_all_blog_posts
-  before_filter :find_blog_post, :only => [:show, :update_nav]
+  before_filter :find_all_artigos
+  before_filter :find_artigo, :only => [:show, :update_nav]
 
   respond_to :html, :js, :rss
 

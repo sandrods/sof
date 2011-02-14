@@ -1,0 +1,17 @@
+<% if artigo.live? %>
+  <article class="blog_post" id="<%= dom_id(artigo) %>">
+    <header>
+      <h1><%= link_to artigo.titulo, artigo_url(artigo) %></h1>
+      <details>
+        <time datetime="<%=l artigo.data.to_date, :format => :default %>" class='posted_at'>
+          <%= t('blog.shared.posts.created_at', :when => l(artigo.data.to_date, :format => :short)) %>.
+        </time>
+      </details>
+    </header>
+    <footer>
+      <p>
+        <%= link_to t('blog.shared.posts.read_more'), artigo_url(artigo) %>
+      </p>
+    </footer>
+  </article>
+<% end %>

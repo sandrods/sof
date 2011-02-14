@@ -14,8 +14,8 @@ module Refinery
       config.after_initialize do
         Refinery::Plugin.register do |plugin|
           plugin.name = "refinerycms_publicacoes"
-          plugin.url = {:controller => '/admin/publicacoes/artigos', :action => 'index'}
-          plugin.menu_match = /^\/?(admin|refinery)\/publicacoes\/?(artigos|categorias)?/
+          plugin.url = {:controller => '/admin/artigos', :action => 'index'}
+          plugin.menu_match = /^\/?(admin|refinery)\/?(artigos|categorias)?/
           plugin.activity = {
             :class => Artigo
           }

@@ -1,0 +1,8 @@
+<h2><%= t('.title') %></h2>
+<ul id='categories'>
+  <% @categorias.each do |categoria| %>
+    <li<%= " class='selected'" if @category.present? and @category.id == categoria.id %>>
+      <%= link_to "#{categoria.titulo} (#{categoria.post_count})", categoria_url(categoria) %>
+    </li>
+  <% end %>
+</ul>

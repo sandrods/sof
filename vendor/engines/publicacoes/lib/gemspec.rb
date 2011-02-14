@@ -29,4 +29,4 @@ Gem::Specification.new do |s|
 end
 EOF
 
-File.open(File.expand_path("../../refinerycms-blog.gemspec", __FILE__), 'w').puts(gemspec)
+File.open(File.expand_path("../../refinerycms-publicacoes.gemspec", __FILE__), 'w').puts(gemspec)

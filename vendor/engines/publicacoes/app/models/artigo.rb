@@ -15,6 +15,8 @@ class Artigo < ActiveRecord::Base
   scope :previous, lambda { |i| where(["data < ?", i.data, false]).order("data DESC").limit(1) }
   scope :next, lambda { |i| where(["data > ?", i.data, false]).order("data ASC").limit(1) }
 
+  scope :live, lambda { where( "data < ?", Time.now).order("data DESC") }
+
   def next
     self.class.next(self).first
   end

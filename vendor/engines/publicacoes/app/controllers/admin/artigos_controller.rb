@@ -1,4 +1,4 @@
-class Admin::Publicacoes::ArtigosController < Admin::BaseController
+class Admin::ArtigosController < Admin::BaseController
 
   crudify :artigo,
           :title_attribute => :titulo,

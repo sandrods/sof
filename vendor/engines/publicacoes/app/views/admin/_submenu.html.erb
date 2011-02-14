@@ -3,7 +3,7 @@
     <li>
       <%= render :partial => "/shared/admin/search",
                  :locals => {
-                   :url => admin_publicacoes_artigos_url
+                   :url => admin_artigos_url
                  } %>
     </li>
   </ul>
@@ -14,11 +14,11 @@
                    :class => 'page_copy_icon' %>
     </li>
     <li>
-      <%= link_to t('.posts.manage'), admin_publicacoes_artigos_path,
+      <%= link_to t('.posts.manage'), admin_artigos_path,
                    :class => 'page_icon' %>
     </li>
     <li>
-       <%= link_to t('.posts.new'), new_admin_publicacoes_artigo_url,
+       <%= link_to t('.posts.new'), new_admin_artigo_url,
                    :class => 'page_add_icon' %>
     </li>
   </ul>
@@ -29,11 +29,11 @@
                   :class => 'folder_icon' %>
     </li>
     <li>
-      <%= link_to t('.categories.manage'), admin_publicacoes_categorias_url,
+      <%= link_to t('.categories.manage'), admin_categorias_url,
                   :class => 'folder_edit_icon' %>
     </li>
     <li>
-      <%= link_to t('.categories.new'), new_admin_publicacoes_categoria_url(:dialog => true, :height => 325),
+      <%= link_to t('.categories.new'), new_admin_categoria_url(:dialog => true, :height => 325),
                   :class => 'folder_add_icon' %>
     </li>
   </ul>

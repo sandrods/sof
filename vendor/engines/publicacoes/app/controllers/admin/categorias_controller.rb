@@ -1,4 +1,4 @@
-class Admin::Publicacoes::CategoriasController < Admin::BaseController
+class Admin::CategoriasController < Admin::BaseController
 
   crudify :categoria,
           :title_attribute => :titulo,

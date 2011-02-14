@@ -1,4 +1,4 @@
-class Publicacoes::CategoriasController < BlogController
+class CategoriasController < PublicacoesController
 
   def show
     @categoria = Categoria.find(params[:id])

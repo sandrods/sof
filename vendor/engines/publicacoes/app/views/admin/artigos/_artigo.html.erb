@@ -4,12 +4,12 @@
     <span class="preview">&nbsp;</span>
   </span>
   <span class='actions'>
-    <%= link_to refinery_icon_tag("application_go.png"), publicacoes_artigo_url(artigo),
+    <%= link_to refinery_icon_tag("application_go.png"), artigo_url(artigo),
         :title => t('.view_live_html'),
         :target => "_blank" %>
-    <%= link_to refinery_icon_tag("application_edit.png"), edit_admin_publicacoes_artigo_path(artigo),
+    <%= link_to refinery_icon_tag("application_edit.png"), edit_admin_artigo_path(artigo),
          :title => t('.edit') %>
-    <%= link_to refinery_icon_tag("delete.png"), admin_publicacoes_artigo_path(artigo),
+    <%= link_to refinery_icon_tag("delete.png"), admin_artigo_path(artigo),
         :class => "cancel confirm-delete",
         :title => t('.delete'),
         :method => :delete,
