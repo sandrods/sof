@@ -1,0 +1,26 @@
+<%= render :partial => '/admin/submenu' %>
+<div id='records'>
+  <% if searching? %>
+    <h2><%= t('shared.admin.search.results_for', :query => params[:search]) %></h2>
+    <% if @artigos.any? %>
+      <%= render :partial => "artigo",
+                 :collection => @artigos %>
+    <% else %>
+      <p><%= t('admin.search_no_results') %></p>
+    <% end %>
+  <% else %>
+    <% if @artigos.any? %>
+      <%= will_paginate @artigos %>
+
+      <%= render :partial => "sortable_list" %>
+
+      <%= will_paginate @artigos %>
+    <% else %>
+      <p>
+        <strong>
+          <%= t('.no_items_yet', :create => t('admin.submenu.posts.new')) %>
+        </strong>
+      </p>
+    <% end %>
+  <% end %>
+</div>

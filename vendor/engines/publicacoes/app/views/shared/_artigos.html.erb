@@ -1,0 +1,8 @@
+<h2><%= t('.other') %></h2>
+<ul id="blog_posts">
+  <% @artigos.each do |artigo| %>
+    <li class='clearfix'>
+      <%= link_to artigo.titulo, artigo_url(artigo) %>
+    </li>
+  <% end %>
+</ul>

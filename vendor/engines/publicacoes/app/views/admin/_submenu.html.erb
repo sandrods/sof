@@ -1,0 +1,51 @@
+<nav id='actions' class='multilist'>
+  <ul class='search_list'>
+    <li>
+      <%= render :partial => "/shared/admin/search",
+                 :locals => {
+                   :url => admin_artigos_url
+                 } %>
+    </li>
+  </ul>
+
+  <ul class='collapsible_menu'>
+    <li>
+      <%= link_to t('.posts.title'), '#',
+                   :class => 'page_copy_icon' %>
+    </li>
+    <li>
+      <%= link_to t('.posts.manage'), admin_artigos_path,
+                   :class => 'page_icon' %>
+    </li>
+    <li>
+       <%= link_to t('.posts.new'), new_admin_artigo_url,
+                   :class => 'page_add_icon' %>
+    </li>
+  </ul>
+
+  <ul class='collapsible_menu'>
+    <li>
+      <%= link_to t('.categories.title'), '#',
+                  :class => 'folder_icon' %>
+    </li>
+    <li>
+      <%= link_to t('.categories.manage'), admin_categorias_url,
+                  :class => 'folder_edit_icon' %>
+    </li>
+    <li>
+      <%= link_to t('.categories.new'), new_admin_categoria_url(:dialog => true, :height => 325),
+                  :class => 'folder_add_icon' %>
+    </li>
+  </ul>
+
+</nav>
+
+<% if Refinery.version < '0.9.9' %>
+  <% content_for :head do %>
+    <%= stylesheet_link_tag('refinery/refinerycms-publicacoes') %>
+    <%# this javascript is not even required in >= 0.9.9 because we made this sort of menu core. %>
+    <%= javascript_include_tag('refinery/refinerycms-blog') %>
+  <% end %>
+<% else %>
+  <% content_for :stylesheets, stylesheet_link_tag('refinery/refinerycms-publicacoes')%>
+<% end %>

@@ -1,0 +1,22 @@
+<% content_for :body_content_left do %>
+  <%= @page[Page.default_parts.first.to_sym].html_safe if Page.default_parts.any? %>
+
+  <% if @artigos.any? %>
+    <section id="blog_posts">
+      <%= render :partial => "/shared/artigo", :collection => @artigos %>
+    </section>
+  <% else %>
+    <p><%= t('.no_blog_articles_yet') %></p>
+  <% end %>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <%= @page[Page.default_parts.second.to_sym].html_safe if Page.default_parts.many? %>
+
+  <%= render :partial => "/shared/categorias" %>
+  <%= render :partial => "/shared/rss_feed" %>
+
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>
+<% content_for :stylesheets, stylesheet_link_tag('refinerycms-publicacoes') %>

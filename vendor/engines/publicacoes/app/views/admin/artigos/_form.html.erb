@@ -1,0 +1,34 @@
+<%= form_for [:admin, @artigo] do |f| -%>
+  <%= render :partial => "/shared/admin/error_messages",
+             :locals => {
+               :object => f.object,
+               :include_object_name => true
+             } %>
+
+  <div class='field'>
+    <%= f.label :titulo -%>
+    <%= f.text_field :titulo, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :data, "Data de Publicação" -%>
+    <%= f.datetime_select :data -%>
+  </div>
+
+  <%= render :partial => "/shared/admin/form_actions",
+              :locals => {
+                :f => f,
+                :continue_editing => true,
+                :delete_title => t('admin.blog.posts.post.delete')
+              } %>
+<% end -%>
+
+<% if Refinery.version < '0.9.9' %>
+  <% content_for :head do %>
+    <%= render :partial => 'form.css' %>
+    <%= render :partial => 'form.js' %>
+  <% end %>
+<% else %>
+  <% content_for :stylesheets, render(:partial => 'form.css') -%>
+  <% content_for :javascripts, render(:partial => 'form.js') -%>
+<% end %>
