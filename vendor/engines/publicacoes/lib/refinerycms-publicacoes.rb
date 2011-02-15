@@ -1,7 +1,4 @@
-if defined?(Bundler) and !defined?(FiltersSpam)
-  # this will tell the user what to do
-  load(File.expand_path('../../Gemfile', __FILE__))
-end
+require 'refinery'
 
 module Refinery
   module Publicacoes
@@ -15,7 +12,7 @@ module Refinery
         Refinery::Plugin.register do |plugin|
           plugin.name = "refinerycms_publicacoes"
           plugin.url = {:controller => '/admin/artigos', :action => 'index'}
-          plugin.menu_match = /^\/?(admin|refinery)\/?(artigos|categorias)?/
+          plugin.menu_match = /(admin|refinery)\/(artigos|categorias)$/
           plugin.activity = {
             :class => Artigo
           }

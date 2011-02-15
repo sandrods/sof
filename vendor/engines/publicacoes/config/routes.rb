@@ -7,7 +7,6 @@ Refinery::Application.routes.draw do
 
   scope(:path => 'refinery', :as => 'admin', :module => 'admin') do
 
-    root :to => 'artigos#index'
     resources :artigos
     resources :categorias
 
