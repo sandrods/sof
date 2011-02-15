@@ -11,6 +11,30 @@
   </div>
 
   <div class='field'>
+    <%= f.label :categoria_id, "Categoria" -%>
+    <%= f.select :categoria_id, Categoria.to_select, { :prompt => "--> Selecione uma Categoria" }, :class => 'big' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :imagem, "Imagem da Publicação" -%>
+    <%= render :partial => "/shared/admin/image_picker", :locals => {
+          :f => f,
+          :field => :imagem_id,
+          :image => @artigo.imagem,
+          :toggle_image_display => false
+        } %>
+  </div>
+
+  <div class='field'>
+    <%= f.label :arquivo, "Arquivo" -%>
+    <%= render :partial => "/shared/admin/resource_picker", :locals => {
+          :f => f,
+          :field => :arquivo_id,
+          :resource => @artigo.arquivo
+        } %>
+  </div>
+
+  <div class='field'>
     <%= f.label :data, "Data de Publicação" -%>
     <%= f.datetime_select :data -%>
   </div>
@@ -23,12 +47,6 @@
               } %>
 <% end -%>
 
-<% if Refinery.version < '0.9.9' %>
-  <% content_for :head do %>
-    <%= render :partial => 'form.css' %>
-    <%= render :partial => 'form.js' %>
-  <% end %>
-<% else %>
-  <% content_for :stylesheets, render(:partial => 'form.css') -%>
-  <% content_for :javascripts, render(:partial => 'form.js') -%>
-<% end %>
+<% content_for :stylesheets, render(:partial => 'form.css') -%>
+<% content_for :javascripts, render(:partial => 'form.js') -%>
+

@@ -11,5 +11,9 @@ class Categoria < ActiveRecord::Base
   def post_count
     artigos.select(&:live?).count
   end
+  
+  def Categoria.to_select
+    Categoria.order('titulo ASC').all.map {|c| [c.titulo, c.id]}
+  end
 
 end

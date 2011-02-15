@@ -2,9 +2,13 @@ class Artigo < ActiveRecord::Base
 
   belongs_to :categoria
 
+  belongs_to :imagem, :class_name => 'Image'
+  belongs_to :arquivo, :class_name => 'Resource'
+
   acts_as_indexed :fields => [:titulo]
 
   validates :titulo, :presence => true, :uniqueness => true
+  validates :categoria, :presence => true
 
   has_friendly_id :titulo, :use_slug => true
 

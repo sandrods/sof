@@ -53,3 +53,9 @@ ul.collapsible_menu > div {
   width: 93%;
   margin: 0px auto;
 }
+
+select.big {
+	border: 1px dotted #68829C;
+	padding: 3px;
+	font-size: 150%;
+}
