@@ -1,0 +1,24 @@
+pt-BR:
+  shared:
+    admin:
+      image_picker:
+        image: imagem
+  plugins:
+    banners:
+      title: Banners
+  admin:
+    banners:
+      index:
+        title: Banners
+        create_new: Criar Novo Banner
+        reorder: Reordenar os Banners
+        reorder_done: Terminei de reordenar os Banners
+        sorry_no_results: Desculpe! Não foram encontrados resultados.
+        no_items_yet: Ainda não há Banners. Clique "Criar Novo Banner" para criar o primeiro banner.
+      banner:
+        view_live_html: "Visualizar este banner agora <br/><em>(abre em nova janela)</em>"
+        edit: Editar este banner
+        delete: Apagar este banner definitivamente
+  banners:
+    show:
+      other: Outros Banners

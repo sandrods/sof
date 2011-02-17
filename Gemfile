@@ -81,3 +81,4 @@ gem 'refinerycms-eventos', '1.0', :path => 'vendor/engines'
 gem 'refinerycms-noticias', '1.0', :path => 'vendor/engines'
 
 gem 'refinerycms-publicacoes', '1.0', :path => 'vendor/engines'
+gem 'refinerycms-banners', '1.0', :path => 'vendor/engines'

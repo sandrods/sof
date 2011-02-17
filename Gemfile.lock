@@ -1,6 +1,7 @@
 PATH
   remote: vendor/engines
   specs:
+    refinerycms-banners (1.0)
     refinerycms-eventos (1.0)
     refinerycms-noticias (1.0)
     refinerycms-publicacoes (1.0)
@@ -204,6 +205,7 @@ DEPENDENCIES
   rack-test (~> 0.5.6)
   rails (= 3.0.4)
   refinerycms (= 0.9.9)
+  refinerycms-banners (= 1.0)!
   refinerycms-eventos (= 1.0)!
   refinerycms-generators (~> 0.9)
   refinerycms-i18n (~> 0.9)
