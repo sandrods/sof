@@ -33,7 +33,7 @@ gem 'aws-s3', :require => 'aws/s3'
 # REFINERY CMS ================================================================
 
 # Specify the Refinery CMS core:
-gem 'refinerycms',              '= 0.9.9'
+gem 'refinerycms',              '= 0.9.9.4'
 
 group :development, :test do
   # RSpec
