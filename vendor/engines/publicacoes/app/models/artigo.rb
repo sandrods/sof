@@ -7,6 +7,8 @@ class Artigo < ActiveRecord::Base
 
   acts_as_indexed :fields => [:titulo]
 
+  acts_as_taggable
+
   validates :titulo, :presence => true, :uniqueness => true
   validates :categoria, :presence => true
 
