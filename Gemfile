@@ -36,6 +36,7 @@ gem 'aws-s3', :require => 'aws/s3'
 gem 'refinerycms',              '= 0.9.9.4'
 
 group :development, :test do
+  gem 'mongrel', '>= 1.2.0.pre2'
   # RSpec
   gem 'rspec-rails',            '= 2.3'
   # Cucumber
