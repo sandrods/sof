@@ -2,7 +2,7 @@ class Noticia < ActiveRecord::Base
 
   acts_as_indexed :fields => [:titulo, :lead, :detalhe]
   
-  acts_as_taggable
+  acts_as_taggable_on :tags
   
   validates :titulo, :presence => true, :uniqueness => true
   
