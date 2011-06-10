@@ -1,6 +1,19 @@
-<% form_tag search_url do -%>
-  <%= text_field_tag :query, {}, {:type => "search",
-                     :placeholder => "Pesquisar no site por...",
-                     :value => (params[:query] if params[:query])} %>
-  <%= submit_tag 'Busca' %>
-<% end %>
+<div id="buscaGoogle">
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td width="74%" colspan="2"><form action="http://www.google.com/custom" method="get">
+            Busca:
+            <input name="q" class="form_textBox" size="20" maxlength="255" />
+            <input type="hidden" value="www.sof.org.br" name="domains" />
+            <input type="radio" value="" name="sitesearch" />
+            na web
+            <input name="sitesearch" type="radio" value="www.sof.org.br" checked="checked" />
+            neste site<a href="http://www.google.com/search">
+            <input name="sa" type="submit" class="form_button" value="Buscar" />
+            </a>
+          </form></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

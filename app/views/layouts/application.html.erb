@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" xml:lang="pt-BR">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt_BR" xml:lang="pt_BR">
+
+<%= render :partial => '/shared/head' %>
+
+<body>
+
+<div id="container">
+    <div id="barraSuperior">
+        <div id="barra">
+
+            <%= render :partial => '/shared/search' %>
+
+            <div id="acessibilidade">
+                Acessibilidade <a href="#" title="texto menor" class="mais">A-</a> | <a href="#" title="texto maior" class="menos">A+</a>
+            </div>
+
+            <div id="rss">
+                <a href="#boletins">Receba nossos boletins</a> &nbsp;&nbsp;&nbsp;&nbsp; 
+                RSS <a href="#rss"> <%= image_tag("rss.png", :alt=>"rss", :border=>"0", :align=>"absmiddle") %></a>
+            </div>
+
+            <div id="idioma">&nbsp;
+                <%= image_tag("flag_en.png", :alt=>"english") %>&nbsp;<%= image_tag("flag_es.png", :alt=>"espa&ntilde;ol") %>&nbsp;
+            </div>
+
+        </div> <!--barra-->
+
+        <div id="marca">
+            <%= link_to(image_tag("marca.png", :alt=>'SOF', :width=>'1000', :height=>'130', :border => 0), root_url) %>
+        </div>
+
+		<%= render :partial => '/shared/menu' %>
+
+    </div> <!--barraSuperior-->
+
+    <div id="conteudo">
+        <%= yield %>
+    </div>
+
+    <!-- rodapé-->
+    <div id="rodape" title="Sempreviva Organiza&ccedil;&atilde;o Feminista">
+        <p><strong>Sempreviva Organização Feminista </strong></p>
+        <p>R. Ministro Costa e Silva, 36 - Pinheiros, São Paulo/SP <br />
+            CEP: 05417-080 - Fone/Fax: (11) 3819-3876</p>
+    </div>
+
+</div>
+
+</body>
+</html>
