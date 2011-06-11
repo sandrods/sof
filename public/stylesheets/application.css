@@ -172,6 +172,7 @@ width:auto;}
 	width: auto;
 	font-size: 1.7em;
 	margin-bottom: 0.5em;
+	line-height: 1.1;
 }
 
 #noticiaCapa {
@@ -453,6 +454,8 @@ a.changetext:visited {
 	display: block;
 	width: auto;
 	margin-bottom: 10px;
+	padding: 2px;
+	font-size: 0.95em;
 }
 .form_buttonCad {
 	cursor: hand;

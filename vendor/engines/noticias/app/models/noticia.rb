@@ -7,4 +7,14 @@ class Noticia < ActiveRecord::Base
   validates :titulo, :presence => true, :uniqueness => true
   
   belongs_to :foto, :class_name => 'Image'
+  
+  def self.destaque
+    @destaque ||= Noticia.first
+  end
+
+  def self.destaque2
+    @destaque2 ||= Noticia.offset(1).first
+  end
+
+
 end
