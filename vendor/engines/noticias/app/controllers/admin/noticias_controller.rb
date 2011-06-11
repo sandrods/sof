@@ -3,8 +3,7 @@ module Admin
 
     crudify :noticia,
             :title_attribute => 'titulo',
-            :order => "data DESC",
-            :sortable => false
+            :sortable => true
             
 
     def index

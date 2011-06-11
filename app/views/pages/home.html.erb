@@ -1,39 +1,45 @@
     <!-- banners atuais -->
     <div id="banner">
-      <p><img src="uploads/macha_mundial.gif" alt="Marcha Mundial das Mulheres" width="133" height="55" /></p>
-      <p><img src="uploads/rede_economica.gif" alt="rede economia e feminismo" width="132" height="55" /></p><br />
-<!-- nuvem de TAGs aqui -->
-<div id="tagCloud" title="nuvem de TAGs - Nossa visão feminista sobre">
-          <h3>Nossa visão feminista sobre</h3><br />
-&nbsp;&nbsp;&nbsp;
-           </div>
+		<%- Banner.all.each do |banner| -%>
+		<p><%= link_to(image_fu(banner.image, nil), banner.url, :target=>'new') %></p>
+		<%- end -%>
+
+		<div id="tagCloud" title="nuvem de TAGs - Nossa visão feminista sobre">
+          <h3>Nossa visão feminista sobre</h3><br />&nbsp;&nbsp;&nbsp;
+       </div>
     </div>
-    <div id="destaque">
-      <h3> Destaque</h3>
-      <div id="fotoDestaque">
-        <div id="legendaDestaque">
-          <!-- /* legenda/título da foto em destaque*/ -->
-          <h1><a href="#noticia">Feministas em luta por autonomia e igualdade! Contra o machismo e o capitalismo</a></h1>
-        </div>
-        <img src="images/exemploFoto.jpg" alt="foto de exemplo" /> </div>
-      <div id="textoDestaque">
-        <h1>Feministas em luta por autonomia e igualdade! Contra o machismo e o capitalismo</h1>
-        Diversas entidades feministas convocam para o Ato do Dia Internacional de Luta das Mulheres que acontece no dia 12 de março. Por mais um ano, as mulheres saem às ruas para lutar contra o machismo e a violência sexista e reivindicar direitos. </div>
-    </div>
+
+	<div id="destaque">
+		<h3>Destaque</h3>
+		<div id="fotoDestaque">
+			<div id="legendaDestaque">
+				<!-- /* legenda/título da foto em destaque*/ -->
+				<h1><a href="#noticia"><%= Noticia.destaque.try(:titulo) %></a></h1>
+			</div>
+			<%= image_fu Noticia.destaque.foto, nil %>
+		</div>
+		<div id="textoDestaque">
+			<h1><%= Noticia.destaque.try(:titulo) %></h1>
+			<%= raw Noticia.destaque.try(:lead) %>
+		</div>
+	</div>
+
     <div id="capa">
       <!-- esquerda -->
       <div id="esquerda">
+	
         <div id="noticiaCapa">
-          <h3>Centen&aacute;rio de nascimento de Maria Bonita e <br />
-            Dia Internacional de Lutas das Mulheres</h3>
-          <img src="uploads/mimeSite.jpg" alt="teste" width="200" height="120" align="left" />
-          <p>O Autor na Pra&ccedil;a em parceria com a Sempreviva Organiza&ccedil;&atilde;o Feminista e o poeta Ricardo Carneiro e Silva realizam diversas atividades em celebra&ccedil;&atilde;o ao centen&aacute;rio de nascimento da Maria Bonita e ao Dia Internacional de Lutas das Mulheres. </p>
+          	<h3><%= Noticia.destaque2.try(:titulo) %></h3>
+			<%= image_fu Noticia.destaque2.foto, :small, :align=>'left' %>
+			
+          <p><%= raw Noticia.destaque2.try(:lead) %></p>
           <p class="leiamais"><a href="#leiamais">Leia mais &#9658;</a></p>
         </div>
+
         <br />
         <div id="servicosCapa">
           <div id="editalCapa">
-            <h3 class="tarjaVerde">edital</h3>
+            <h3 class="tarjaVerde">Editais</h3>
             <p><strong>10.01.2011 - Edital N&ordm; 001/ 20011</strong> - Cadastro e Sele&ccedil;&atilde;o de Curr&iacute;culos para Presta&ccedil;&atilde;o de Servi&ccedil;o<br />
               <br />
               <a href="#edital"><strong>Leia edital completo</strong></a></p>
@@ -65,7 +71,7 @@
         <br />
         <div id="publicacoesCapa">
           <h3>Publicac&otilde;es</h3>
-          <p><a href="#jornal"><img src="uploads/52.jpg" alt="jornal" align="left" /></a><a href="#publicacao01">Jornal da MMM - A&ccedil;&atilde;o 2010/Mar&ccedil;o - n&ordm; 2</a></p>
+          <p><a href="#jornal"><%= image_tag("52.jpg", :align=>"left") %></a><a href="#publicacao01">Jornal da MMM - A&ccedil;&atilde;o 2010/Mar&ccedil;o - n&ordm; 2</a></p>
           <p><a href="#publicacao02">Boletim da Marcha N&deg; 52 - Maio/2010</a></p>
           <p><a href="#publicacao03">Folha Feminista n&deg; 70 - Jun/2010</a></p>
           <p class="leiamais"><a href="#leiamais">Leia mais &#9658;</a></p>
