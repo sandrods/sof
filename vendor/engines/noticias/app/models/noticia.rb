@@ -9,11 +9,11 @@ class Noticia < ActiveRecord::Base
   belongs_to :foto, :class_name => 'Image'
   
   def self.destaque
-    @destaque ||= Noticia.first
+    @destaque ||= Noticia.order('data desc').first
   end
 
   def self.destaque2
-    @destaque2 ||= Noticia.offset(1).first
+    @destaque2 ||= Noticia.order('data desc').offset(1).first
   end
 
 

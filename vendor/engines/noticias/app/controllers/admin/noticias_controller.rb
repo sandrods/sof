@@ -3,8 +3,8 @@ module Admin
 
     crudify :noticia,
             :title_attribute => 'titulo',
-            :sortable => true
-            
+            :sortable => false,
+            :order => "data desc"
 
     def index
       search_all_noticias if searching?
