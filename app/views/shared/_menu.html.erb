@@ -1,17 +1,45 @@
+<script type='text/javascript'> 
+
+jQuery(document).ready(function() { 
+jQuery("#dropmenu ul").css({display: "none"}); // Opera Fix 
+jQuery("#dropmenu li").hover(function(){ 
+	jQuery(this).find('ul:first').css({visibility: "visible",display: "none"}).show(220); 
+	},function(){ 
+	jQuery(this).find('ul:first').css({visibility: "hidden"}); 
+	}); 
+}); 
+</script>
+
+<%
+  dom_id ||= 'menu'
+  css ||= 'menu'
+  hide_children = RefinerySetting.find_or_set(:menu_hide_children, false) unless defined?(hide_children)
+  # Select top menu items unless 'roots' is supplied.
+  collection ||= @menu_pages.includes(:parts, :slugs)
+  if (roots ||= collection.select{|p| p.parent_id.nil?}).present?
+    # In order to match items that aren't shown in menu and highlight their associations.
+    # This can be supplied if the logic different in your case.
+    unless defined?(selected_item)
+      selected_item = collection.detect{|page| selected_page?(page)}
+      selected_item = @page if selected_item.nil?
+    end
+    sibling_count = roots.length - 1
+-%>
+
 <div id="menu" role="navigation">
   <div class="menu">
-    <ul>
-      <li><a href="#sof" title="Sobre a SOF">A SOF</a> </li>
-      <li><a href="#movimento" title="Em movimento">Em movimento</a> </li>
-      <li><a href="#artigos" title="Artigos">Artigos</a> </li>
-      <li><a href="#publicacoes" title="Publica&ccedil;&otilde;es">Publicações</a> </li>
-      <li><a href="#noticias" title="Not&iacute;cias">Notícias</a> </li>
-      <li><a href="#agenda" title="Agenda">Agenda</a> </li>
-      <li><a href="#galeria" title="Galeria">Galeria</a> </li>
-      <li><a href="#biblioteca" title="Biblioteca">Biblioteca</a> </li>
-      <li><a href="#links" title="Links">Links</a> </li>
-      <li><a href="#imprensa" title="Imprensa">Imprensa</a> </li>
-      <li><a href="#faleconosco" title="Fale Conosco">Fale Conosco</a> </li>
+    <ul id="dropmenu">
+        <%= render :partial => "/shared/menu_branch",
+                   :collection => roots,
+                   :locals => {
+                     :hide_children => hide_children,
+                     :sibling_count => sibling_count,
+                     :collection => collection,
+                     :selected_item => selected_item,
+                     :apply_css => true #if you don't care about class='first' class='last' or class='selected' set apply_css to false for speed.
+                   }
+        -%>
     </ul>
   </div>
 </div>
+<% end -%>
