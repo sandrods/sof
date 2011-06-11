@@ -5,7 +5,9 @@ module Admin
             :title_attribute => 'titulo',
             :order => 'inicio desc',
             :sortable => false
-
+    
+    autocomplete :tag, :name
+    
     def index
       search_all_eventos if searching?
       paginate_all_eventos
