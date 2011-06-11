@@ -16,7 +16,7 @@
 				<!-- /* legenda/título da foto em destaque*/ -->
 				<h1><a href="#noticia"><%= Noticia.destaque.try(:titulo) %></a></h1>
 			</div>
-			<%= image_fu Noticia.destaque.foto, nil %>
+			<%= image_fu Noticia.destaque.foto, :large %>
 		</div>
 		<div id="textoDestaque">
 			<h1><%= Noticia.destaque.try(:titulo) %></h1>
