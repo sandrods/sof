@@ -44,6 +44,8 @@
         } %>
   </div>
   
+  <%= render :partial => "tags",:locals => {:f => f} %>
+  
   <%= render :partial => "/shared/admin/form_actions",
               :locals => {
                 :f => f,

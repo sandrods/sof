@@ -3,8 +3,15 @@ module Admin
 
     crudify :noticia,
             :title_attribute => 'titulo',
+<<<<<<< HEAD
             :sortable => false,
             :order => "data desc"
+=======
+            :order => "data DESC",
+            :sortable => false
+    
+    autocomplete :tag, :name            
+>>>>>>> work
 
     def index
       search_all_noticias if searching?

@@ -1,5 +1,8 @@
 <%= render :partial => "form" %>
 
 <% content_for :javascripts do %>
-  <%= javascript_include_tag 'autocomplete-rails' %>
+  <%= javascript_include_tag 'autocomplete-rails','jquery-ui.custom.min' %>
+<% end %>
+<% content_for :stylesheets do %>
+  <%= stylesheet_link_tag 'ui-darkness/jquery-ui-x.custom' %>
 <% end %>
