@@ -2,16 +2,11 @@ module Admin
   class NoticiasController < Admin::BaseController
 
     crudify :noticia,
-            :title_attribute => 'titulo',
-<<<<<<< HEAD
+            :title_attribute => 'titulo',      
             :sortable => false,
-            :order => "data desc"
-=======
-            :order => "data DESC",
-            :sortable => false
+            :order => "data desc"            
     
     autocomplete :tag, :name            
->>>>>>> work
 
     def index
       search_all_noticias if searching?
