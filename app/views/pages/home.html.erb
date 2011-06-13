@@ -63,9 +63,12 @@
       <div id="direita">
         <div id="agendaCapa">
           <h3>Agenda</h3>
-          <p><a href="#evento01">Trabalhadoras, licen&ccedil;a maternidade e a luta por autonomia econ&ocirc;mica</a></p>
-          <p><a href="#evento02">4&ordm; Encontro de Mulheres Estudantes da Uni&atilde;o Nacional dos Estudantes&rdquo;</a></p>
-          <p><a href="#evento03">SOF realiza Feira de Economia Feminista e Solid&aacute;ria </a></p>
+			<%- Evento.ultimos.each do |eve| -%>
+			<p>
+				<%= link_to(eve.titulo, "#") %>
+				<em><%= eve.inicio.strftime("%d/%m/%Y") %> - <%= eve.local %></em>
+			</p>
+			<%- end -%>
           <p class="leiamais"><a href="#leiamais">Leia mais &#9658;</a></p>
         </div>
         <br />

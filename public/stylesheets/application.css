@@ -204,11 +204,22 @@ body {
 	color: #FF3300;
 	border-bottom: 1px solid #FF3300;
 }
+#conteudo #agendaCapa p {
+	margin-bottom: 0.6em;
+	margin-top: 0.6em;
+}
+
 #agendaCapa p a {
 	color: #782193;
 	display: block;
-	padding-bottom: 0.4em;
+	padding-bottom: 0.0em;
 	padding-top: 0.4em;
+	line-height: 1.2em;
+}
+#agendaCapa p em {
+	font-style: normal;
+	font-size: 9pt;
+	color: #555;
 }
 #publicacoesCapa {
 	float: left;
