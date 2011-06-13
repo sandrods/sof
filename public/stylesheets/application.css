@@ -480,14 +480,14 @@ a.changetext:visited {
 }
 #dropmenu a {
 	display:block;
-	padding:0.75em 1em;
+	padding: 1em;
 	color:#686868;
 	border-right:1px solid #721688;
 	text-decoration:none;/* background:#fff; */
 	
 }
 #dropmenu a:hover {
-	background-color:#5A116C;
+	background-color:#782193;
 	color:#FFFF00;
 }
 #dropmenu li {
