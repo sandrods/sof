@@ -167,15 +167,13 @@ body {
 }
 #legendaDestaque h1 a:active, #legendaDestaque h1 a:hover { color: #FFFF00; }
 #textoDestaque {
-	float: left;
-	height: auto;
-	margin-left: 1em;
-	margin-right: 0.5em;
-	padding-bottom: 10px;
-	padding-top: 10px;
-	width: 50%;
-	color: #666666;
-	line-height: 1.4em;
+    float: left;
+    height: auto;
+    margin-left: 1em;
+    margin-right: 0.5em;
+    padding-bottom: 10px;
+    padding-top: 0;
+    width: 43%;
 }
 #textoDestaque h1 {
 	width: auto;
@@ -287,13 +285,19 @@ body {
 	padding-top: 5px;
 }
 #banner {
-	float: right;
-	height: 100%;
-	position: relative;
-	margin: 0px;
-	padding: 0px;
-	width: 132px;
-	text-align: center;
+    float: right;
+    height: 100%;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    position: relative;
+    text-align: center;
+    width: 200px;
 }
 #banner img { margin-bottom: 10px; }
 #migalha {
