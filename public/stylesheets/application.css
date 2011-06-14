@@ -92,6 +92,34 @@ body {
 	clear: both;
 	position: relative;
 }
+
+#conteudo #body_content_title {
+	float: left;
+}
+
+#conteudo #body_content_left {
+	float: left;
+	width: 630px;
+}
+#conteudo #body_content_right {
+	float: right;
+	width: 300px;
+	vertical-align: top;
+	background-color: #eac5f3;
+	padding: 8px;
+	height: 500px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#conteudo #body_content_right ul li {
+	font-size: 9pt;
+	padding: 5px 0;
+	color: #555;
+}
+#conteudo #body_content_right ul{
+	margin-top: 12px;
+}
+
 #conteudo h2 { color: #8D5A9D; }
 #rodape {
 	background: url(../images/bg_rodape.png) center bottom;
@@ -146,11 +174,22 @@ body {
 	padding-bottom: 10px;
 	padding-top: 10px;
 	width: 50%;
+	color: #666666;
+	line-height: 1.4em;
 }
 #textoDestaque h1 {
 	width: auto;
 	font-size: 1.7em;
 	margin-bottom: 0.5em;
+	line-height: 1.1em;
+	
+}
+#textoDestaque h1 a {
+	color: #666666;
+}
+#textoDestaque h1 a:hover {
+	color: #5A116C;
+	text-decoration:none;
 }
 #noticiaCapa {
 	width: auto;
@@ -405,7 +444,20 @@ a.changetext:visited {
 	color: #782193;
 	margin-bottom: 15px;
 }
-#noticiaCapa p { }
+
+#noticiaCapa a {
+	color: #782193;
+}
+#noticiaCapa a:hover {
+	color: #5A116C;
+	text-decoration:none;
+}
+
+#noticiaCapa p {
+	font-size:10pt;
+	line-height: 1.4em;
+	color: #666;
+}
 #noticiaCapa img { margin: 0px 10px 10px 0; }
 .leiamais {
 	color: #009900 !important;

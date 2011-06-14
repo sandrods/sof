@@ -20,7 +20,7 @@ class NoticiasController < ApplicationController
 protected
 
   def find_all_noticias
-    @noticias = Noticia.find(:all, :order => "data DESC")
+    @noticias = Noticia.order("data DESC").limit(10).all
   end
 
   def find_page

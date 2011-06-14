@@ -3,49 +3,24 @@
 <% end %>
 
 <% content_for :body_content_left do %>
-  <section>
-    <h1>Titulo</h1>
-    <p>
-      <%=raw @noticia.titulo %>
-    </p>
-  </section>
-  <section>
-    <h1>Lead</h1>
-    <p>
-      <%=raw @noticia.lead %>
-    </p>
-  </section>
-  <section>
-    <h1>Detalhe</h1>
-    <p>
-      <%=raw @noticia.detalhe %>
-    </p>
-  </section>
-  <section>
-    <h1>Data</h1>
-    <p>
-      <%=raw @noticia.data %>
-    </p>
-  </section>
-  <section>
-    <h1>Foto</h1>
-    <p>
-      <%= image_fu @noticia.foto, nil %>
-    </p>
-  </section>
+
+  <%= raw @noticia.detalhe %>
+
 <% end %>
 
 <% content_for :body_content_right do %>
-  <aside>
+
     <h2><%= t('.other') %></h2>
     <ul id="noticias">
       <% @noticias.each do |noticia| %>
+		<%- unless noticia.id == @noticia.id -%>
         <li>
           <%= link_to noticia.titulo, noticia_url(noticia) %>
         </li>
+      	<% end %>
       <% end %>
     </ul>
-  </aside>
+
 <% end %>
 
 <%= render :partial => "/shared/content_page" %>
