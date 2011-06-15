@@ -1,0 +1,5 @@
+<% tags = %w(AI-5 Digital Amazônia ataque a liberdade ativismo Autoritarismo azeredo brasil censura ciberativismo CIBERCIDADANIA Cibercrimes cibercultura compartilhamento comunicação copyright cultura cultura digital culturadigitalbr cultura livre debate defesa da liberdade democracia direito direito autoral Direitos Autorais educação eleições internet Ivana Bentes jornalismo liberdade liberdade de expressão Liberdade na Internet livre mídia música P2P Paulo Teixeira pirataria politica privacidade Rio de Janeiro Software Livre vigilantismo violação de privacidade) %>
+
+<%- tags.each do |tag| -%>
+<%= link_to(tag, "#", :class=>"t_#{rand(8)+1}") %>
+<% end -%>
