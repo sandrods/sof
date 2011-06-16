@@ -119,7 +119,7 @@
 	padding-top: 0.4em;
 	line-height: 1.2em;
 }
-#agendaCapa p em {
+#capa p em {
 	font-style: normal;
 	font-size: 9pt;
 	color: #555;
@@ -140,7 +140,7 @@
 #publicacoesCapa p a {
 	color: #782193;
 	display: block;
-	padding-bottom: 0.4em;
+	padding-bottom: 0;
 	padding-top: 0.4em;
 }
 #capa {

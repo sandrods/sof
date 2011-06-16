@@ -77,10 +77,17 @@
         <br />
         <div id="publicacoesCapa">
           <h3>Publicac&otilde;es</h3>
-			<p><%= image_fu(Artigo.capa.imagem, :pub, :align=>"left") %> <%= link_to(Artigo.capa.titulo, Artigo.capa) %></p>
+			<p>
+				<%= image_fu(Artigo.capa.imagem, :pub, :align=>"left") %>
+				<%= link_to(Artigo.capa.titulo, Artigo.capa) %>
+				<em><%= Artigo.capa.data.strftime("%d/%m/%Y") %> - <%= Artigo.capa.categoria.titulo %></em>
+			</p>
 			<br/><br/>
           <%- Artigo.capa2.each do |pub| -%>
-			<p><%= link_to(pub.titulo, pub) %></p>
+			<p>
+				<%= link_to(pub.titulo, pub) %>
+				<em><%= pub.data.strftime("%d/%m/%Y") %> - <%= pub.categoria.titulo %></em>
+			</p>
 		  <% end -%>
           <p class="leiamais"><a href="#leiamais">Leia mais &#9658;</a></p>
         </div>

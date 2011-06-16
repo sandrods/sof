@@ -1,43 +1,28 @@
 class ArtigosController < PublicacoesController
 
-  before_filter :find_all_artigos
-  before_filter :find_artigo, :only => [:show, :update_nav]
+    before_filter :find_all_artigos
+    before_filter :find_page
 
-  respond_to :html, :js, :rss
-
-  def index
-    respond_with (@artigos) do |format|
-      format.html
-      format.rss
+    def index
+      present(@page)
     end
-  end
 
-  def show
+    def show
+      @artigo = Artigo.find(params[:id])
 
-    respond_with (@artigo) do |format|
-      format.html { present(@page) }
-      format.js { render :partial => 'artigo', :layout => false }
+      # you can use meta fields from your model instead (e.g. browser_title)
+      # by swapping @page for @noticia in the line below:
+      present(@page)
     end
-  end
 
+  protected
 
-protected
-
-  def find_artigo
-    unless (@artigo = Artigo.find(params[:id])).try(:live?)
-      if refinery_user? and current_user.authorized_plugins.include?("refinerycms_publicacoes")
-        @artigo = Artigo.find(params[:id])
-      else
-        error_404
-      end
+    def find_all_artigos
+      @artigos = Artigo.order("data DESC").limit(10).all
     end
-  end
 
-  def find_all_artigos
-    @artigos = Artigo.live.includes(:categoria).paginate({
-      :page => params[:page],
-      :per_page => RefinerySetting.find_or_set(:publicacoes_per_page, 10)
-    })
-  end
+    def find_page
+      @page = Page.find_by_link_url("/publicacoes")
+    end
 
 end

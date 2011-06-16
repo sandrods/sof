@@ -34,20 +34,14 @@ pt-BR:
     shared:
       categories:
         title: Categorias
-      rss_feed:
-        title: Feed RSS
-        subscribe: Assinar
-      posts:
-        other: Últimos Artigos
+      artigos:
+        other: Outras Publicações
         created_at: 'Postado em %{when}'
         read_more: Continue lendo...
     categories:
       show:
         no_posts: Não há posts aqui ainda.
-    posts:
-      index:
-        no_blog_articles_yet: Ainda não há artigos postados.
-      show:
-        blog_home: Publicações
-        other: Outros posts
-        filed_in: Arquivado em
+  artigos:
+    show:
+      other: Outras Publicações
+
