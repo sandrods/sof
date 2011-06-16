@@ -3,7 +3,9 @@ class Noticia < ActiveRecord::Base
   acts_as_indexed :fields => [:titulo, :lead, :detalhe]
   
   acts_as_taggable_on :tags
-  
+
+  has_friendly_id :titulo, :use_slug => true
+
   validates :titulo, :presence => true, :uniqueness => true
   
   belongs_to :foto, :class_name => 'Image'

@@ -35,4 +35,12 @@ class Artigo < ActiveRecord::Base
     data <= Time.now
   end
 
+  def self.capa
+    Artigo.order("data DESC").first
+  end
+
+  def self.capa2
+    Artigo.order("data DESC").limit(2).offset(1)
+  end
+
 end

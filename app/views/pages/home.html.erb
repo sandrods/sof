@@ -77,9 +77,11 @@
         <br />
         <div id="publicacoesCapa">
           <h3>Publicac&otilde;es</h3>
-          <p><a href="#jornal"><%= image_tag("52.jpg", :align=>"left") %></a><a href="#publicacao01">Jornal da MMM - A&ccedil;&atilde;o 2010/Mar&ccedil;o - n&ordm; 2</a></p>
-          <p><a href="#publicacao02">Boletim da Marcha N&deg; 52 - Maio/2010</a></p>
-          <p><a href="#publicacao03">Folha Feminista n&deg; 70 - Jun/2010</a></p>
+			<p><%= image_fu(Artigo.capa.imagem, :pub, :align=>"left") %> <%= link_to(Artigo.capa.titulo, Artigo.capa) %></p>
+			<br/><br/>
+          <%- Artigo.capa2.each do |pub| -%>
+			<p><%= link_to(pub.titulo, pub) %></p>
+		  <% end -%>
           <p class="leiamais"><a href="#leiamais">Leia mais &#9658;</a></p>
         </div>
         
