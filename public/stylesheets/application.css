@@ -121,6 +121,26 @@ body {
 }
 
 #conteudo h2 { color: #8D5A9D; }
+
+.download {
+	margin-top: 30px;
+	padding:10px 20px 20px 20px;
+	float: left;
+	width: 360px;
+	border: 1px dotted #839b53;
+	background-color: #def4b2;
+	margin-left: 50px;
+	color: #777;
+}
+.download a { color: #777; }
+.download label {
+	display: block;
+	font-size: 9pt;
+	font-weight: bold;
+	color: #839b53;
+	margin-top:12px;
+}
+
 #rodape {
 	background: url(../images/bg_rodape.png) center bottom;
 	height: 60px;
@@ -275,45 +295,7 @@ a.changetext:visited {
 	-webkit-appearance: radio;
 	box-sizing: border-box;
 }
-#noticiaCapa { width:370px; }
-#noticiaCapa h3 {
-	color: #782193;
-	margin-bottom: 15px;
-}
 
-#noticiaCapa a {
-	color: #782193;
-}
-#noticiaCapa a:hover {
-	color: #5A116C;
-	text-decoration:none;
-}
-
-#noticiaCapa p {
-	font-size:10pt;
-	line-height: 1.4em;
-	color: #666;
-}
-#noticiaCapa img { margin: 0px 10px 10px 0; }
-.leiamais {
-	color: #009900 !important;
-	text-align: right !important;
-	border-bottom: 1px solid #009900 !important;
-	width: 100% !important;
-	padding-top: 0px !important;
-	padding-bottom: 0px !important;
-	font-weight: bold !important;
-	font-size: 12px !important;
-}
-.leiamais a, .leiamais a:link, .leiamais a:visited { color: #009900 !important; }
-.tarjaVerde {
-	color: #FFFFFF;
-	background: #669900;
-	display: block;
-	width: auto;
-	margin-bottom: 10px;
-	padding: 2px;
-}
 .form_buttonCad {
 	cursor: hand;
 	color: #669900;

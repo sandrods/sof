@@ -4,8 +4,19 @@
 
 <% content_for :body_content_left do %>
 
-  <%= image_fu(@artigo.imagem, nil) %>
-  <%= link_to("#{@artigo.arquivo.file_name} (#{number_to_human_size(@artigo.arquivo.size)})", @artigo.arquivo.url) %>
+  <%= image_fu(@artigo.imagem, nil, :style=>"margin-top: 20px; float: left;") %>
+
+	<div class="download">
+		<label>Arquivo</label>
+  		<h3><%= link_to("#{@artigo.arquivo.title} (#{number_to_human_size(@artigo.arquivo.size)})", @artigo.arquivo.url) %></h3>
+
+		<label>Categoria</label>
+		<%= @artigo.categoria.titulo %>
+  		
+		<label>Data</label>
+		<%= @artigo.data.try(:strftime, "%d/%m/%Y") %>
+  		
+	</div>
 
 <% end %>
 
