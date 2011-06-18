@@ -1,0 +1,25 @@
+<section id='body_content' class='no_body_content_left'>
+  <h1 id="body_content_title">Tag: <%=@tag.name%></h1>
+  <section id="body_content_left">
+    <% if @noticias.count > 0 %>
+    <h3>Notícias</h3>
+    <ul>
+    <% @noticias.each do |noticia| %>
+      <li><%=link_to noticia.titulo,noticia_path(noticia)%></li>
+    <% end %>
+    </ul>
+    <% end %>
+
+    <% if @eventos.count > 0 %>
+    <h3>Agenda</h3>
+    <ul>
+    <% @eventos.each do |evento| %>
+      <li><%=link_to evento.titulo,evento_path(evento)%></li>
+    <% end %>
+    </ul>
+    <% end %>
+
+  </section>
+</section>
+
+
