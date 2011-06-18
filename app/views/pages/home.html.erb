@@ -82,7 +82,7 @@
 				<%= link_to(Artigo.capa.titulo, Artigo.capa) %>
 				<em><%= Artigo.capa.data.strftime("%d/%m/%Y") %> - <%= Artigo.capa.categoria.titulo %></em>
 			</p>
-			<br/><br/>
+			<br/><br clear="left"/>
           <%- Artigo.capa2.each do |pub| -%>
 			<p>
 				<%= link_to(pub.titulo, pub) %>
