@@ -36,7 +36,7 @@
 			<%= image_fu Noticia.destaque2.foto, :small, :align=>'left' %>
 			
           <p><%= raw Noticia.destaque2.try(:lead) %></p>
-          <p class="leiamais"><a href="#leiamais">Leia mais &#9658;</a></p>
+          <p class="leiamais"><a href="/noticias">Leia mais &#9658;</a></p>
         </div>
 
         <br />
@@ -72,7 +72,7 @@
 				<em><%= eve.inicio.strftime("%d/%m/%Y") %> - <%= eve.local %></em>
 			</p>
 			<%- end -%>
-          <p class="leiamais"><a href="#leiamais">Leia mais &#9658;</a></p>
+          <p class="leiamais"><a href="/eventos">Leia mais &#9658;</a></p>
         </div>
         <br />
         <div id="publicacoesCapa">
