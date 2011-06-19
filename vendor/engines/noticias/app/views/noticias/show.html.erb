@@ -1,11 +1,11 @@
 <% content_for :body_content_title do %>
-  <%= @noticia.titulo %>
+  <%= @noticia.titulo %>  
 <% end %>
 
 <% content_for :body_content_left do %>
 
   <%= raw @noticia.detalhe %>
-
+  <small><strong>Publicada em <%=@noticia.data.strftime('%d/%m/%Y')%></strong></small>
 <% end %>
 
 <% content_for :body_content_right do %>
