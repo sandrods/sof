@@ -43,9 +43,9 @@
         <div id="servicosCapa">
           <div id="editalCapa">
             <h3 class="tarjaVerde">Editais</h3>
-            <p><strong>10.01.2011 - Edital N&ordm; 001/ 20011</strong> - Cadastro e Sele&ccedil;&atilde;o de Curr&iacute;culos para Presta&ccedil;&atilde;o de Servi&ccedil;o<br />
+            <p><strong><%=Edital.last.data.strftime("%d.%m.%Y")%> - <%=Edital.last.titulo%></strong> - <%=Edital.last.descricao%><br />              
               <br />
-              <a href="#edital"><strong>Leia edital completo</strong></a></p>
+              <strong><%= link_to('Leia o edital completo',Edital.last.arquivo.url)%></strong></p>
           </div>
           <div id="boletimCapa">
             <h3 class="tarjaVerde">Boletim </h3>

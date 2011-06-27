@@ -1,0 +1,38 @@
+<%= form_for [:admin, @edital] do |f| -%>
+  <%= render :partial => "/shared/admin/error_messages", :locals => {
+          :object => @edital,
+          :include_object_name => true
+        } %>
+  
+  <div class='field'>
+    <%= f.label :data -%>
+    <%= f.date_select :data -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :título -%>
+    <%= f.text_field :titulo -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :descrição -%>
+    <%= f.text_field :descricao -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :arquivo -%>
+    <%= render :partial => "/shared/admin/resource_picker", :locals => {
+          :f => f,
+          :field => :arquivo_id,
+          :resource => @edital.arquivo,
+        } %>
+  </div>
+  
+  <%= render :partial => "/shared/admin/form_actions",
+              :locals => {
+                :f => f,
+                :continue_editing => false,
+                :delete_title => t('delete', :scope => 'admin.editais.edital'),
+                :delete_confirmation => t('message', :scope => 'shared.admin.delete', :title => @edital.titulo)
+              } %>
+<% end -%>

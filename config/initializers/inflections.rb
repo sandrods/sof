@@ -16,6 +16,9 @@ ActiveSupport::Inflector.inflections do |inflect|
   inflect.plural(/^(.*)il$/i, '\1is')
   inflect.singular(/^(.*)is$/i, '\1il')
 
+  inflect.plural(/^(.*)al$/i, '\1ais')
+  inflect.singular(/^(.*)ais$/i, '\1al')
+  
   inflect.plural(/^(.*)ia$/i, '\1ias')
   inflect.singular(/^(.*)ias$/i, '\1ia')
 

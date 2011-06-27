@@ -1,0 +1,45 @@
+<% content_for :body_content_title do %>
+  <%= @edital.titulo %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Data</h1>
+    <p>
+      <%=raw @edital.data %>
+    </p>
+  </section>
+  <section>
+    <h1>Titulo</h1>
+    <p>
+      <%=raw @edital.titulo %>
+    </p>
+  </section>
+  <section>
+    <h1>Descricao</h1>
+    <p>
+      <%=raw @edital.descricao %>
+    </p>
+  </section>
+  <section>
+    <h1>Arquivo</h1>
+    <p>
+      <%= link_to 'arquivo', @edital.arquivo.url %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="editais">
+      <% @editais.each do |edital| %>
+        <li>
+          <%= link_to edital.titulo, edital_url(edital) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

@@ -1,0 +1,24 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    editais:
+      title: Editais
+  admin:
+    editais:
+      index:
+        title: Editais
+        create_new: CREATE NEW Edital
+        reorder: REORDR Editais
+        reorder_done: DUN REORDERIN Editais
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Editais YET. CLICK "CREATE NEW Edital" 2 ADD UR FURST edital.
+      edital:
+        view_live_html: VIEW DIS edital LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS edital
+        delete: REMOOV DIS edital FOREVR
+  editais:
+    show:
+      other: OTHR Editais

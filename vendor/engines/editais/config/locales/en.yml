@@ -1,0 +1,24 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    editais:
+      title: Editais
+  admin:
+    editais:
+      index:
+        title: Editais
+        create_new: Add New Edital
+        reorder: Reorder Editais
+        reorder_done: Done Reordering Editais
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Editais yet. Click "Add New Edital" to add your first edital.
+      edital:
+        view_live_html: View this edital live <br/><em>(opens in a new window)</em>
+        edit: Edit this edital
+        delete: Remove this edital forever
+  editais:
+    show:
+      other: Other Editais

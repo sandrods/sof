@@ -1,0 +1,20 @@
+nb:
+  plugins:
+    editais:
+      title: Editais
+  admin:
+    editais:
+      index:
+        title: Editais
+        create_new: Lag en ny Edital
+        reorder: Endre rekkefølgen på Editais
+        reorder_done: Ferdig å endre rekkefølgen Editais
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Editais enda. Klikk på "Lag en ny Edital" for å legge til din første edital.
+      edital:
+        view_live_html: Vis hvordan denne edital ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne edital
+        delete: Fjern denne edital permanent
+  editais:
+    show:
+      other: Andre Editais

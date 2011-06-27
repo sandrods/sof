@@ -1,0 +1,18 @@
+pt-BR:
+  plugins:
+    editais:
+      title: "Editais"
+  admin:
+    editais:
+      index:
+        title: Editais
+        create_new: Criar Novo Edital
+        reorder: Reordenar os Editais
+        reorder_done: Terminei de reordenar os Editais
+        sorry_no_results: Desculpe! Não foram encontrados resultados.
+        no_items_yet: Ainda não há Editais. Clique "Criar Novo Edital" para criar o primeiro edital.
+      edital:
+        view_live_html: "Visualizar este edital agora <br/><em>(abre em nova janela)</em>"
+        edit: Editar este edital
+        delete: Apagar este edital definitivamente
+      

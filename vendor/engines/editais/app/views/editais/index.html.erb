@@ -1,0 +1,11 @@
+<% content_for :body_content_left do %>
+  <ul id="editais">
+    <% @editais.each do |edital| %>
+      <li>
+        <%= link_to edital.titulo, edital_url(edital) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>
