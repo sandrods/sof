@@ -1,0 +1,5 @@
+pt-BR:
+  admin:
+    inquiries:
+      index:
+        no_inquiries: "Não existem mensagens."
