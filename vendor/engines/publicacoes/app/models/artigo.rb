@@ -6,6 +6,8 @@ class Artigo < ActiveRecord::Base
   belongs_to :arquivo, :class_name => 'Resource'
 
   acts_as_indexed :fields => [:titulo]
+  
+  alias_attribute :title, :titulo
 
   acts_as_taggable_on :tags
 

@@ -2,6 +2,8 @@ class Noticia < ActiveRecord::Base
 
   acts_as_indexed :fields => [:titulo, :lead, :detalhe]
   
+  alias_attribute :title, :titulo
+  
   acts_as_taggable_on :tags
 
   has_friendly_id :titulo, :use_slug => true

@@ -2,6 +2,8 @@ class Evento < ActiveRecord::Base
 
   acts_as_indexed :fields => [:titulo, :lead, :detalhe, :local]
   
+  alias_attribute :title, :titulo
+  
   acts_as_taggable_on :tags
   
   validates :titulo, :presence => true, :uniqueness => true

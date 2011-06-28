@@ -40,7 +40,7 @@ module Sof
     config.filter_parameters += [:password]
 
     config.to_prepare do
-      Refinery.searchable_models = [Page]
+      Refinery.searchable_models = [Page, Banner, Evento, Noticia, Artigo]
     end
   end
 end
