@@ -41,12 +41,16 @@
 
         <br />
         <div id="servicosCapa">
+
           <div id="editalCapa">
             <h3 class="tarjaVerde">Editais</h3>
-            <p><strong><%=Edital.last.data.strftime("%d.%m.%Y")%> - <%=Edital.last.titulo%></strong> - <%=Edital.last.descricao%><br />              
+			<%- if Edital.last -%>
+            <p><strong><%= Edital.last.data.strftime("%d.%m.%Y")%> - <%=Edital.last.titulo%></strong> - <%=Edital.last.descricao%><br />              
               <br />
-              <strong><%= link_to('Leia o edital completo',Edital.last.arquivo.url)%></strong></p>
+              <strong><%= link_to('Leia o edital completo', Edital.last.arquivo.url)%></strong></p>
+			<% end -%>
           </div>
+
           <div id="boletimCapa">
             <h3 class="tarjaVerde">Boletim </h3>
             <form action="" method="post" name="cadastroBoletim" id="cadastraBoletim" title="cadastro de e-mail para o boletim" lang="pt" xml:lang="pt">
