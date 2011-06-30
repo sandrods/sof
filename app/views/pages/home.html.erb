@@ -48,7 +48,9 @@
             <p><strong><%= Edital.last.data.strftime("%d.%m.%Y")%> - <%=Edital.last.titulo%></strong> - <%=Edital.last.descricao%><br />              
               <br />
               <strong><%= link_to('Leia o edital completo', Edital.last.arquivo.url)%></strong></p>
-			<% end -%>
+			<% else -%>
+            <p>Sem editais cadastrados</p>
+      <% end -%>
           </div>
 
           <div id="boletimCapa">
