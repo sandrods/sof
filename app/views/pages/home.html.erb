@@ -74,7 +74,7 @@
           <h3>Agenda</h3>
 			<%- Evento.ultimos.each do |eve| -%>
 			<p>
-				<%= link_to(eve.titulo, "#") %>
+				<%= link_to(eve.titulo, evento_path(eve)) %>
 				<em><%= eve.inicio.strftime("%d/%m/%Y") %> - <%= eve.local %></em>
 			</p>
 			<%- end -%>
