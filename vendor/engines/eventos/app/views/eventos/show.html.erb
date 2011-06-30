@@ -4,37 +4,32 @@
 
 <% content_for :body_content_left do %>
   <section>
-    <h1>Título</h1>
+    <!--<h1>Lead</h1>-->
     <p>
-      <%=raw @evento.titulo %>
+      <%=raw @evento.lead %>
     </p>
   </section>
+
   <section>
-    <h1>Início</h1>
+    <h2>Início</h2>
     <p>
       <%=raw @evento.inicio.strftime('%d/%m/%Y %H:%M') %>
     </p>
   </section>
   <section>
-    <h1>Fim</h1>
+    <h2>Fim</h2>
     <p>
       <%=raw @evento.fim.strftime('%d/%m/%Y %H:%M') %>
     </p>
   </section>
   <section>
-    <h1>Local</h1>
+    <h2>Local</h2>
     <p>
       <%=raw @evento.local %>
     </p>
   </section>
   <section>
-    <h1>Lead</h1>
-    <p>
-      <%=raw @evento.lead %>
-    </p>
-  </section>
-  <section>
-    <h1>Detalhe</h1>
+    <h2>Detalhes</h2>
     <p>
       <%=raw @evento.detalhe %>
     </p>
