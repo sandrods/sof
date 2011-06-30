@@ -96,6 +96,7 @@ body {
 #conteudo #body_content_title {
 	float: left;
   margin-right:20px;
+  width: 100%;
 }
 
 #conteudo #body_content_left {
