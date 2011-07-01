@@ -8,7 +8,7 @@
     <% @noticias.each do |noticia| %>
       <li>
         <%= link_to(noticia.titulo, noticia_url(noticia)) %>
-        <%= image_fu(noticia.foto, :fat) %>
+        <%= image_fu(noticia.foto, :small, :align=>"right") %>
 
 		<small>Publicada em <%= noticia.data.strftime('%d/%m/%Y, às %H:%M')%></small>
         <%= raw noticia.lead %>
