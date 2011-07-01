@@ -1,11 +1,21 @@
-<% content_for :body_content_left do %>
-  <ul id="noticias">
+<% content_for :body_content_title do %>
+  Notícias
+<% end %>
+
+<% content_for :body_content_full do %>
+
+  <ul id="noticias" class="fat">
     <% @noticias.each do |noticia| %>
       <li>
-        <%= link_to noticia.titulo, noticia_url(noticia) %>
+        <%= link_to(noticia.titulo, noticia_url(noticia)) %>
+        <%= image_fu(noticia.foto, :fat) %>
+
+		<small>Publicada em <%= noticia.data.strftime('%d/%m/%Y, às %H:%M')%></small>
+        <%= raw noticia.lead %>
       </li>
     <% end %>
   </ul>
+
 <% end %>
 
 <%= render :partial => "/shared/content_page" %>

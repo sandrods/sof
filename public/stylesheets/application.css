@@ -98,6 +98,10 @@ body {
   margin-right:20px;
   width: 100%;
 }
+#conteudo #body_content_full {
+	float: left;
+	width: 100%;
+}
 
 #conteudo #body_content_left {
 	float: left;
@@ -377,3 +381,51 @@ a.changetext:visited {
 }
 #dropmenu li:hover ul ul, #dropmenu li:hover ul ul ul, #dropmenu li:hover ul ul ul ul { display:none; }
 #dropmenu li:hover ul, #dropmenu li li:hover ul, #dropmenu li li li:hover ul, #dropmenu li li li li:hover ul { display:block; }
+
+
+
+
+/* App
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+ul.fat {
+	border-top: 1px solid #db4143;
+	float: left;
+	margin: 10px 0 20px 0;
+}
+
+ul.fat li{
+	border-bottom: 1px solid #db4143;
+	padding: 15px 0;
+	float: left;
+}
+
+ul.fat li a{
+	color: #5A116C;
+	font-size: 12pt;
+	font-weight: bold;
+	float: left;
+	width: 800px;
+	margin-bottom:1px;
+}
+ul.fat li p{
+	color: #555;
+	font-size: 10pt;
+	font-weight: normal;
+	margin: 0 !important;
+	float: left;
+	width: 800px;
+}
+ul.fat li img {
+	float: right;
+	margin:0;
+	vertical-align: top;
+}
+ul.fat li small {
+	float: left;
+	width: 800px;
+	margin-bottom:5px;
+	color: #888;
+}
+
+
