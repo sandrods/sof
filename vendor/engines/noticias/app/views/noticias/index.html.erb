@@ -3,7 +3,16 @@
 <% end %>
 
 <% content_for :body_content_full do %>
+  
+  <div class="filtro">
+	<%= form_tag(noticias_path, :method=>:get) do %>
+		<label><strong>Filtrar</strong> (palavras no título, no lead e no texto)</label>
+		<input type="text" class="text" name="filtro" value="<%= params[:filtro] %>"></input>
+		<input type="submit" class="form_button" value="Filtrar"></input>
+	<% end -%>
+  </div>
 
+  <%- if @noticias.present? -%>
   <ul id="noticias" class="fat">
     <% @noticias.each do |noticia| %>
       <li>
@@ -15,6 +24,11 @@
       </li>
     <% end %>
   </ul>
+  <%- else -%>
+    <br/>
+	<h3>Não foram encontradas notícias</h3>
+    <br/>
+  <%- end -%>
 
 <% end %>
 
