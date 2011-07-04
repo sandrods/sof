@@ -141,7 +141,7 @@
 	width: 370px;
 	float: left;
 	position: relative;
-	height: 250px;
+	height: auto;
 }
 #agendaCapa h3 {
 	color: #FF3300;
@@ -214,12 +214,9 @@
 #tagCloud {
 	width:auto;
 	height:100%;
-	/*background-color:#f9f9d9;
-  background-color: #EAC5F3;*/
 	float: right;
 	margin: 0 0 15px 0;
 	padding: 10px 3px;
-	border: 1px dotted #8D5A9D
 }
 #tagCloud h3 {
   font-size: 10pt;
@@ -232,6 +229,7 @@
 
 #tagCloud a {
 	color: #5A116C;
+  font-family: calibra;
 }
 #tagCloud a.t_1 {	font-size: 8pt; }
 #tagCloud a.t_2 {	font-size: 8pt; }
