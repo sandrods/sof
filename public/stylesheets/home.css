@@ -219,8 +219,8 @@
 	padding: 10px 3px;
 }
 #tagCloud h3 {
-  font-size: 10pt;
-	color: #FF3300;
+  font-size: 12pt;
+	color: #782193;
 	border-bottom: 1px solid #8D5A9D;
 	margin-top: 0px;
 	margin-bottom: 5px;
@@ -229,7 +229,7 @@
 
 #tagCloud a {
 	color: #5A116C;
-  font-family: calibra;
+  font-family: Calibri;
 }
 #tagCloud a.t_1 {	font-size: 8pt; }
 #tagCloud a.t_2 {	font-size: 8pt; }
