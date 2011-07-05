@@ -5,6 +5,9 @@
 	border-bottom: 1px solid #999999;
 	margin-top: -10px;
 	margin-bottom: 5px;
+	font-family: 'Philosopher', arial, sans-serif;
+	font-size: 120%;
+	font-weight: normal;
 }
 #fotoDestaque {
 	height: auto;
@@ -44,12 +47,16 @@
     width: 43%;
     color: #666666;
 }
+#textoDestaque p {
+	font-family: 'News Cycle', arial, sans-serif;
+}
 #textoDestaque h1 {
 	width: auto;
-	font-size: 1.7em;
+	font-size: 1.8em;
 	margin-bottom: 0.5em;
 	line-height: 1.1em;
-	
+	font-family: 'Philosopher', arial, sans-serif;
+	font-weight: normal;
 }
 #textoDestaque h1 a {
 	color: #5A116C;
@@ -71,6 +78,9 @@
 #noticiaCapa h3 {
 	color: #782193;
 	margin-bottom: 15px;
+	font-family: 'Philosopher', arial, sans-serif;
+	font-weight: normal;
+	font-size: 1.3em;
 }
 
 #noticiaCapa a {
@@ -85,7 +95,9 @@
 	font-size:10pt;
 	line-height: 1.4em;
 	color: #666;
+	font-family: 'News Cycle', arial, sans-serif;
 }
+
 #noticiaCapa img { margin: 0px 10px 10px 0; }
 .leiamais {
 	color: #009900 !important;
@@ -103,8 +115,11 @@
 	background: #669900;
 	display: block;
 	width: auto;
-	margin-bottom: 10px;
+	margin-bottom: 7px;
 	padding: 2px;
+	font-family: 'Philosopher', arial, sans-serif;
+	font-size: 120%;
+	font-weight: normal;
 }
 #servicosCapa {
 	width: 350px;
@@ -136,52 +151,44 @@
 	margin:8px;
 	font-size: 0.9em;
 }
-#agendaCapa {
-	margin: 0;
+
+.listaCapa {
 	width: 370px;
 	float: left;
 	position: relative;
-	height: 250px;
+	margin-bottom: 15px;
 }
-#agendaCapa h3 {
+
+.listaCapa h3 {
 	color: #FF3300;
 	border-bottom: 1px solid #FF3300;
+	font-family: 'Philosopher', arial, sans-serif;
+	font-size: 130%;
+	font-weight: normal;
 }
-#conteudo #agendaCapa p {
+
+.listaCapa p a {
+	color: #782193;
+	display: block;
+	padding-bottom: 0.2em;
+	padding-top: 0.4em;
+	line-height: 1.1em;
+  font-family: 'News Cycle', arial, sans-serif;
+  font-size: 110%;
+}
+#conteudo .listaCapa p {
 	margin-bottom: 0.6em;
 	margin-top: 0.6em;
 }
 
-#agendaCapa p a {
-	color: #782193;
-	display: block;
-	padding-bottom: 0.0em;
-	padding-top: 0.4em;
-	line-height: 1.2em;
-}
-#capa p em {
+.listaCapa p em {
 	font-style: normal;
 	font-size: 9pt;
 	color: #555;
+	font-family: 'News Cycle', arial, sans-serif;
 }
-#publicacoesCapa {
-	float: left;
-	margin-bottom: 10px;
-	width: 370px;
-	position: relative;
-	padding: 0;
-	display: block;
-}
-#publicacoesCapa h3 {
-	color: #FF3300;
-	border-bottom: 1px solid #FF3300;
-}
-#publicacoesCapa p a {
-	color: #782193;
-	display: block;
-	padding-bottom: 0;
-	padding-top: 0.4em;
-}
+
+
 #capa {
 	clear: left;
 	float: left;
@@ -222,16 +229,20 @@
 	border: 1px dotted #8D5A9D
 }
 #tagCloud h3 {
-  font-size: 10pt;
+  font-size: 11pt;
 	color: #FF3300;
 	border-bottom: 1px solid #8D5A9D;
 	margin-top: 0px;
 	margin-bottom: 5px;
 	padding: 0 0 5px 0;
+	font-family: 'Philosopher', helvetica, arial, sans-serif;
+	font-weight: normal;
 }
 
 #tagCloud a {
 	color: #5A116C;
+	font-family: 'Indie Flower', helvetica, arial, sans-serif;
+	margin: 0 5px 0 0;
 }
 #tagCloud a.t_1 {	font-size: 8pt; }
 #tagCloud a.t_2 {	font-size: 8pt; }
