@@ -70,7 +70,7 @@
       </div>
       <!-- direita -->
       <div id="direita">
-        <div id="agendaCapa">
+        <div class="listaCapa">
           <h3>Agenda</h3>
 			<%- Evento.ultimos.each do |eve| -%>
 			<p>
@@ -81,8 +81,8 @@
           <p class="leiamais"><a href="/eventos">Leia mais &#9658;</a></p>
         </div>
         <br />
-        <div id="publicacoesCapa">
-          <h3>Publicac&otilde;es</h3>
+        <div class="listaCapa">
+          <h3>Publica&ccedil;&otilde;es</h3>
 			<p>
 				<%= image_fu(Artigo.capa.imagem, :pub, :align=>"left") %>
 				<%= link_to(Artigo.capa.titulo, Artigo.capa) %>
