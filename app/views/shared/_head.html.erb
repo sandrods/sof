@@ -42,6 +42,9 @@
 	<meta http-equiv="Content-Language" content="pt-BR, pt_BR" />
 	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;" />
 
+  <%= yield :stylesheets %>
+  <%= yield :javascripts %>
+
   <%= render :partial => '/shared/google_analytics' unless local_request? %>
 
   <%= javascript_include_tag 'modernizr-min' %>
