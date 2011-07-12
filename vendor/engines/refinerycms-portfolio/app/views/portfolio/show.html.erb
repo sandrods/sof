@@ -1,0 +1,31 @@
+<% content_for :title, @portfolio_entry.title %>
+
+<% content_for :body_content_title do %>
+  <span><%= @master_entry.title %></span>
+<% end %>
+
+<% content_for :body_content_left do %>
+
+	<script type="text/javascript" charset="utf-8">
+	  $(document).ready(function(){
+	    $("a[rel^='prettyPhoto']").prettyPhoto({
+			show_title: false,
+			social_tools: ""
+		});
+	  });
+	</script>
+
+	<% @portfolio_entry.images.each do |image| %>
+		<%= link_to(image_fu(image, '96x96#c'), image.thumbnail("900x900>").url, :rel => "prettyPhoto[#{@master_entry.id}]" ) %>
+	<% end %>
+
+<% end %>
+
+
+<div class='portfolio'>
+  <%= render :partial => "/shared/content_page" %>
+</div>
+
+
+<% content_for :stylesheets, stylesheet_link_tag('prettyPhoto') %>
+<% content_for :javascripts, javascript_include_tag('jquery.prettyPhoto') %>
