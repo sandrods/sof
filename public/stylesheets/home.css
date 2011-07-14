@@ -241,14 +241,14 @@
 	font-family: 'Indie Flower', helvetica, arial, sans-serif;
 	margin: 0 5px 0 0;
 }
-#tagCloud a.t_1 {	font-size: 8pt; }
-#tagCloud a.t_2 {	font-size: 8pt; }
-#tagCloud a.t_3 {	font-size: 9pt; }
-#tagCloud a.t_4 {	font-size: 10pt; }
-#tagCloud a.t_5 {	font-size: 11pt; }
-#tagCloud a.t_6 {	font-size: 12pt; }
-#tagCloud a.t_7 {	font-size: 14pt; }
-#tagCloud a.t_8 {	font-size: 16pt; }
+#tagCloud a.t_1 {	font-size: 9pt; }
+#tagCloud a.t_2 {	font-size: 10pt; }
+#tagCloud a.t_3 {	font-size: 11pt; }
+#tagCloud a.t_4 {	font-size: 12pt; }
+#tagCloud a.t_5 {	font-size: 13pt; }
+#tagCloud a.t_6 {	font-size: 14pt; }
+#tagCloud a.t_7 {	font-size: 15pt; }
+#tagCloud a.t_8 {	font-size: 17pt; }
 
 #capa #esquerda {
 	float: left;
