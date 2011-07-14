@@ -155,7 +155,26 @@ body {
 	color: #FFFFFF;
 	padding: 20px;
 	clear: both;
-	position: relative;
+	position: relative;  
+}
+
+#rodape_esq {
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+
+#rodape_dir {
+  float: right;
+  width: 50%;
+  vertical-align: center;
+  height: 100%;
+  text-align: right;
+}
+
+#rodape_dir a {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 #migalha {
