@@ -4,13 +4,16 @@
 
 <% content_for :body_content_left do %>
 
+<%= image_fu(@noticia.foto, :medium, :align=>"left") %>
+
   <%= raw @noticia.detalhe %>
-  <small><strong>Publicada em <%=@noticia.data.strftime('%d/%m/%Y')%></strong></small>
+  <div class="light">Publicada em <%=@noticia.data.strftime('%d/%m/%Y')%></div>
+
 <% end %>
 
 <% content_for :body_content_right do %>
 
-    <h2><%= t('.other') %></h2>
+    <h2>Outras Notícias</h2>
     <ul id="noticias">
       <% @noticias.each do |noticia| %>
 		<%- unless noticia.id == @noticia.id -%>

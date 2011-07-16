@@ -1,3 +1,8 @@
+if RUBY_VERSION > '1.9'
+  require 'yaml'
+  YAML::ENGINE.yamler= 'syck'
+end
+
 require 'rubygems'
 
 # Set up gems listed in the Gemfile.

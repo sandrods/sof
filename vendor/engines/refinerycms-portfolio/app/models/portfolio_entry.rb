@@ -23,7 +23,12 @@ class PortfolioEntry < ActiveRecord::Base
 
     self.images = (0..(data.length-1)).collect { |i|
       unless (image_id = data[i.to_s]['id'].to_i) == 0
-        Image.find(image_id) rescue nil
+        img = Image.find(image_id) rescue nil
+        if img
+          img.image_name=data[i.to_s]['image_name']
+          img.save!
+        end
+        img
       end
     }.compact
   end
