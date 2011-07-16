@@ -64,6 +64,7 @@
                 <li id='image_<%= image_form.object.id %>'>
                   <%= image_form.hidden_field :id %>
                   <%= image_fu image_form.object, '135x135#c' %>
+				  <%= image_form.text_area :image_name %>
                 </li>
               <% end %>
               <li class='empty'>
