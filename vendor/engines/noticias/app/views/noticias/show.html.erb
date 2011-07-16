@@ -4,6 +4,8 @@
 
 <% content_for :body_content_left do %>
 
+<%= image_fu(@noticia.foto, :medium, :align=>"left") %>
+
   <%= raw @noticia.detalhe %>
   <small><strong>Publicada em <%=@noticia.data.strftime('%d/%m/%Y')%></strong></small>
 <% end %>

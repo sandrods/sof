@@ -93,11 +93,19 @@ body {
 	position: relative;
 }
 
+#conteudo p{
+ color: #555;
+ line-height: 18pt;
+}
+
 #conteudo #body_content_title {
 	float: left;
   margin-right:20px;
   width: 100%;
+	font-family: 'Philosopher',arial,sans-serif;
+	color: #5A116C;
 }
+
 #conteudo #body_content_full {
 	float: left;
 	width: 100%;
@@ -106,6 +114,13 @@ body {
 #conteudo #body_content_left {
 	float: left;
 	width: 630px;
+}
+
+#conteudo #body_content_left img{
+	margin: 20px 20px 10px 0;
+	padding: 6px;
+	border: 1px solid #ccc;
+	background-color: #f3f4ed;
 }
 #conteudo #body_content_right {
 	float: right;
