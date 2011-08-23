@@ -124,6 +124,7 @@ GEM
       gem_plugin (~> 0.2.3)
     moretea-awesome_nested_set (1.4.3.1)
       activerecord (~> 3.0.0)
+    mysql2 (0.3.7)
     nokogiri (1.4.4)
     polyglot (0.3.1)
     rack (1.2.3)
@@ -255,6 +256,7 @@ DEPENDENCIES
   json_pure
   launchy
   mongrel (>= 1.2.0.pre2)
+  mysql2
   rack-test (~> 0.5.6)
   rails (= 3.0.7)
   rails3-jquery-autocomplete
