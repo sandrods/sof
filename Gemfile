@@ -4,9 +4,10 @@ gem 'rails', '3.0.7'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
+group :production do
+  gem 'mysql2','0.2.8'
+end
 
-gem 'sqlite3'
-gem 'mysql2','0.2.8'
 gem 'acts-as-taggable-on'
 gem 'jquery-rails'
 gem 'rails3-jquery-autocomplete'
@@ -40,6 +41,7 @@ gem 'aws-s3', :require => 'aws/s3'
 gem 'refinerycms',              '= 0.9.9.4'
 
 group :development, :test do
+  gem 'sqlite3'
   gem 'mongrel', '>= 1.2.0.pre2'
   # RSpec
   gem 'rspec-rails',            '= 2.3'
