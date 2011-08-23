@@ -48,4 +48,4 @@ Sof::Application.configure do
   config.active_support.deprecation = :notify
 end
 Refinery.rescue_not_found = true
-Refinery.s3_backend = true
+Refinery.s3_backend = false
