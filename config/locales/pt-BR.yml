@@ -3,3 +3,7 @@ pt-BR:
     inquiries:
       index:
         no_inquiries: "Não existem mensagens."
+  shared:
+    admin:
+      resource_picker:
+        no_resource_selected: Atualmente não existe nenhum arquivo selecionado, por favor clique aqui para adicionar um.

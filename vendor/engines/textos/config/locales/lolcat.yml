@@ -1,0 +1,24 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    textos:
+      title: Textos
+  admin:
+    textos:
+      index:
+        title: Textos
+        create_new: CREATE NEW Texto
+        reorder: REORDR Textos
+        reorder_done: DUN REORDERIN Textos
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Textos YET. CLICK "CREATE NEW Texto" 2 ADD UR FURST texto.
+      texto:
+        view_live_html: VIEW DIS texto LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS texto
+        delete: REMOOV DIS texto FOREVR
+  textos:
+    show:
+      other: OTHR Textos

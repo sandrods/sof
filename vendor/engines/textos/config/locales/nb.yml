@@ -1,0 +1,20 @@
+nb:
+  plugins:
+    textos:
+      title: Textos
+  admin:
+    textos:
+      index:
+        title: Textos
+        create_new: Lag en ny Texto
+        reorder: Endre rekkefølgen på Textos
+        reorder_done: Ferdig å endre rekkefølgen Textos
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Textos enda. Klikk på "Lag en ny Texto" for å legge til din første texto.
+      texto:
+        view_live_html: Vis hvordan denne texto ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne texto
+        delete: Fjern denne texto permanent
+  textos:
+    show:
+      other: Andre Textos

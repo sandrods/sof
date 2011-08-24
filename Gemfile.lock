@@ -6,6 +6,7 @@ PATH
     refinerycms-eventos (1.0)
     refinerycms-noticias (1.0)
     refinerycms-publicacoes (1.0)
+    refinerycms-textos (1.0)
 
 PATH
   remote: vendor/engines
@@ -271,6 +272,7 @@ DEPENDENCIES
   refinerycms-portfolio (~> 0.9.9)!
   refinerycms-publicacoes (= 1.0)!
   refinerycms-search (~> 0.9.8)
+  refinerycms-textos (= 1.0)!
   rspec-rails (= 2.3)
   ruby-prof
   spork

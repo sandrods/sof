@@ -1,0 +1,33 @@
+<% content_for :body_content_title do %>
+  <%= @texto.titulo %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Arquivo</h1>
+    <p>
+      <%= link_to 'baixar arquivo', @texto.arquivo.url %>
+    </p>
+  </section>
+  <section>
+    <h1>Publicação</h1>
+    <p>
+      <%=raw @texto.publicacao.strftime('%d/%m/%Y')%>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="textos">
+      <% @textos.each do |texto| %>
+        <li>
+          <%= link_to texto.titulo, texto_url(texto) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

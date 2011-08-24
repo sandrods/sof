@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110711180659) do
+ActiveRecord::Schema.define(:version => 20110824120922) do
 
   create_table "artigos", :force => true do |t|
     t.string   "titulo"
@@ -281,6 +281,17 @@ ActiveRecord::Schema.define(:version => 20110711180659) do
   create_table "tags", :force => true do |t|
     t.string "name"
   end
+
+  create_table "textos", :force => true do |t|
+    t.integer  "arquivo_id"
+    t.string   "titulo"
+    t.date     "publicacao"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "textos", ["id"], :name => "index_textos_on_id"
 
   create_table "user_plugins", :force => true do |t|
     t.integer "user_id"

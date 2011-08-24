@@ -1,0 +1,20 @@
+nl:
+  plugins:
+    textos:
+      title: Textos
+  admin:
+    textos:
+      index:
+        title: Textos
+        create_new: Maak een nieuwe Texto
+        reorder: Wijzig de volgorde van de Textos
+        reorder_done: Klaar met het wijzingen van de volgorde van de Textos
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Textos. Druk op 'Maak een nieuwe Texto' om de eerste aan te maken.
+      texto:
+        view_live_html: Bekijk deze texto op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze texto
+        delete: Verwijder deze texto voor eeuwig
+  textos:
+    show:
+      other: Andere Textos

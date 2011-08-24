@@ -1,0 +1,24 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    textos:
+      title: Textos
+  admin:
+    textos:
+      index:
+        title: Textos
+        create_new: Add New Texto
+        reorder: Reorder Textos
+        reorder_done: Done Reordering Textos
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Textos yet. Click "Add New Texto" to add your first texto.
+      texto:
+        view_live_html: View this texto live <br/><em>(opens in a new window)</em>
+        edit: Edit this texto
+        delete: Remove this texto forever
+  textos:
+    show:
+      other: Other Textos

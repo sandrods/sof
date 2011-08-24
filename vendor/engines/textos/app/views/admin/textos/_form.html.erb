@@ -1,0 +1,35 @@
+<%= form_for [:admin, @texto] do |f| -%>
+  <%= render :partial => "/shared/admin/error_messages", :locals => {
+          :object => @texto,
+          :include_object_name => true
+        } %>
+  
+  <div class='field'>
+    <%= f.label :"título" -%>
+    <%= f.text_field :titulo, :class => 'widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :arquivo -%>
+    <%= render :partial => "/shared/admin/resource_picker", :locals => {
+          :f => f,
+          :field => :arquivo_id,
+          :resource => @texto.arquivo,
+        } %>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :"publicação" -%>
+    <%= f.date_select :publicacao -%>
+  </div>
+
+  <%= render :partial => "tags",:locals => {:f => f} %>  
+
+  <%= render :partial => "/shared/admin/form_actions",
+              :locals => {
+                :f => f,
+                :continue_editing => false,
+                :delete_title => t('delete', :scope => 'admin.textos.texto'),
+                :delete_confirmation => t('message', :scope => 'shared.admin.delete', :title => @texto.titulo)
+              } %>
+<% end -%>
