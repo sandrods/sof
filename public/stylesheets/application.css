@@ -224,6 +224,7 @@ body {
 	clear: both;
 	background: #721688 url(../images/bg_menu.png);
 	/* text-align: justify; */
+	text-align: center;
 	color: #FFFFFF;
 	font-size: 16px;
 	font-weight: bold;
@@ -420,6 +421,7 @@ a.changetext:visited {
 	border-bottom:1px solid #782193;
 	background-color:#5A116C;
 	font-size:10pt;
+	text-align: left;
 }
 #dropmenu ul ul { top:auto; }
 #dropmenu li ul ul {
