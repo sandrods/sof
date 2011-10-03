@@ -3,12 +3,14 @@
 <% end -%>
 
 <% content_for :body_content_left do -%>
-  <% @portfolio_entries.each do | portfolio | -%>
-    <span>
-      <%= link_to raw("#{image_fu portfolio.title_image, '200x200' unless portfolio.title_image.nil?} #{portfolio.title}"),
+  <% if @portfolio_entries.present? %>
+    <% @portfolio_entries.each do | portfolio | -%>
+      <span>
+        <%= link_to raw("#{image_fu portfolio.title_image, '200x200' unless portfolio.title_image.nil?} #{portfolio.title}"),
                   portfolio_path(portfolio) %>
-    </span>
-    <span class="content"><%= raw portfolio.body %></span>
+      </span>
+      <span class="content"><%= raw portfolio.body %></span>
+    <% end -%>
   <% end -%>
 <% end -%>
 
