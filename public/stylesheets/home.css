@@ -1,40 +1,40 @@
 
 #destaque { width:auto; }
 #destaque h3 {
-	color: #999999;
-	border-bottom: 1px solid #999999;
-	margin-top: -10px;
-	margin-bottom: 5px;
-	font-family: 'Philosopher', arial, sans-serif;
-	font-size: 120%;
-	font-weight: normal;
+    color: #999999;
+    border-bottom: 1px solid #999999;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    font-family: 'Philosopher', arial, sans-serif;
+    font-size: 120%;
+    font-weight: normal;
 }
 #fotoDestaque {
-	height: auto;
-	clip: rect(0px,320px,240px,0px);
-	position: relative;
-	margin-bottom: 10px;
-	float: left;
+    height: auto;
+    clip: rect(0px,320px,240px,0px);
+    position: relative;
+    margin-bottom: 10px;
+    float: left;
 }
 #legendaDestaque {
-	position: absolute;
-	width: 310px;
-	clear: none;
-	float: left;
-	background: url(../images/bg_legenda.png);
-	bottom: 7px;
-	font-weight: bold;
-	color: #FFFFFF;
-	padding: 5px;
-	z-index: 300;
+    position: absolute;
+    width: 310px;
+    clear: none;
+    float: left;
+    background: url(../images/bg_legenda.png);
+    bottom: 7px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 5px;
+    z-index: 300;
 }
 #legendaDestaque h1 {
-	font-size: 0.8em;
-	padding-right: 10%; /* pode ser ajustado */
+    font-size: 0.8em;
+    padding-right: 10%; /* pode ser ajustado */
 }
 #legendaDestaque h1 a, #legendaDestaque h1 a:link, #legendaDestaque h1 a:visited {
-	color: #FFFFFF;
-	text-decoration: none;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 #legendaDestaque h1 a:active, #legendaDestaque h1 a:hover { color: #FFFF00; }
 #textoDestaque {
@@ -48,157 +48,157 @@
     color: #666666;
 }
 #textoDestaque p {
-	font-family: 'News Cycle', arial, sans-serif;
+    font-family: 'News Cycle', arial, sans-serif;
 }
 #textoDestaque h1 {
-	width: auto;
-	font-size: 1.8em;
-	margin-bottom: 0.5em;
-	line-height: 1.1em;
-	font-family: 'Philosopher', arial, sans-serif;
-	font-weight: normal;
+    width: auto;
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+    line-height: 1.1em;
+    font-family: 'Philosopher', arial, sans-serif;
+    font-weight: normal;
 }
 #textoDestaque h1 a {
-	color: #5A116C;
+    color: #5A116C;
 }
 #textoDestaque h1 a:hover {
-	color: #666666;
-	text-decoration:none;
+    color: #666666;
+    text-decoration:none;
 }
 #noticiaCapa {
-	width: auto;
-	float: left;
-	height: auto;
-	position: relative;
-	clear: none;
-	margin: 0px;
-	padding: 0 20px 10px 0;
+    width: auto;
+    float: left;
+    height: auto;
+    position: relative;
+    clear: none;
+    margin: 0px;
+    padding: 0 20px 10px 0;
 }
 
 #noticiaCapa h3 {
-	color: #782193;
-	margin-bottom: 15px;
-	font-family: 'Philosopher', arial, sans-serif;
-	font-weight: normal;
-	font-size: 1.3em;
+    color: #782193;
+    margin-bottom: 15px;
+    font-family: 'Philosopher', arial, sans-serif;
+    font-weight: normal;
+    font-size: 1.3em;
 }
 
 #noticiaCapa a {
-	color: #782193;
+    color: #782193;
 }
 #noticiaCapa a:hover {
-	color: #5A116C;
-	text-decoration:none;
+    color: #5A116C;
+    text-decoration:none;
 }
 
 #noticiaCapa p {
-	font-size:10pt;
-	line-height: 1.4em;
-	color: #666;
-	font-family: 'News Cycle', arial, sans-serif;
+    font-size:10pt;
+    line-height: 1.4em;
+    color: #666;
+    font-family: 'News Cycle', arial, sans-serif;
 }
 
 #noticiaCapa img { margin: 0px 10px 10px 0; }
 .leiamais {
-	color: #009900 !important;
-	text-align: right !important;
-	border-bottom: 1px solid #009900 !important;
-	width: 100% !important;
-	padding-top: 0px !important;
-	padding-bottom: 0px !important;
-	font-weight: bold !important;
-	font-size: 12px !important;
+    color: #009900 !important;
+    text-align: right !important;
+    border-bottom: 1px solid #009900 !important;
+    width: 100% !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    font-weight: bold !important;
+    font-size: 12px !important;
 }
 .leiamais a, .leiamais a:link, .leiamais a:visited { color: #009900 !important; }
 .tarjaVerde {
-	color: #FFFFFF;
-	background: #669900;
-	display: block;
-	width: auto;
-	margin-bottom: 7px;
-	padding: 2px;
-	font-family: 'Philosopher', arial, sans-serif;
-	font-size: 120%;
-	font-weight: normal;
+    color: #FFFFFF;
+    background: #669900;
+    display: block;
+    width: auto;
+    margin-bottom: 7px;
+    padding: 2px;
+    font-family: 'Philosopher', arial, sans-serif;
+    font-size: 120%;
+    font-weight: normal;
 }
 #servicosCapa {
-	width: 350px;
-	float: left;
-	padding-left: 10px;
-	clear: none;
-	position: relative;
-	padding-top:0px;
-	padding-bottom: 10px;
-	margin: 0px;
-	height: auto;
+    width: 350px;
+    float: left;
+    padding-left: 10px;
+    clear: none;
+    position: relative;
+    padding-top:0px;
+    padding-bottom: 10px;
+    margin: 0px;
+    height: auto;
 }
 #servicosCapa #editalCapa {
-	width: 320px;
-	float: left;
-	border: 1px solid #669900;
-	margin-bottom: 15px;
+    width: 320px;
+    float: left;
+    border: 1px solid #669900;
+    margin-bottom: 15px;
 }
 #servicosCapa #boletimCapa {
-	width: 320px;
-	float: left;
-	border: 1px solid #669900;
+    width: 320px;
+    float: left;
+    border: 1px solid #669900;
 }
 #cadastraBoletim {
-	margin-left: 10px;
-	font-size: 0.9em;
+    margin-left: 10px;
+    font-size: 0.9em;
 }
 #editalCapa p {
-	margin:8px;
-	font-size: 0.9em;
+    margin:8px;
+    font-size: 0.9em;
 }
 
 .listaCapa {
-	width: 370px;
-	float: left;
-	position: relative;
-	margin-bottom: 15px;
+    width: 370px;
+    float: left;
+    position: relative;
+    margin-bottom: 15px;
 }
 
 .listaCapa h3 {
-	color: #FF3300;
-	border-bottom: 1px solid #FF3300;
-	font-family: 'Philosopher', arial, sans-serif;
-	font-size: 130%;
-	font-weight: normal;
+    color: #FF3300;
+    border-bottom: 1px solid #FF3300;
+    font-family: 'Philosopher', arial, sans-serif;
+    font-size: 130%;
+    font-weight: normal;
 }
 
 .listaCapa p a {
-	color: #782193;
-	display: block;
-	padding-bottom: 0.2em;
-	padding-top: 0.4em;
-	line-height: 1.1em;
+    color: #782193;
+    display: block;
+    padding-bottom: 0.2em;
+    padding-top: 0.4em;
+    line-height: 1.1em;
   font-family: 'News Cycle', arial, sans-serif;
   font-size: 110%;
 }
 #conteudo .listaCapa p {
-	margin-bottom: 0.6em;
-	margin-top: 0.6em;
+    margin-bottom: 0.6em;
+    margin-top: 0.6em;
 }
 
 .listaCapa p em {
-	font-style: normal;
-	font-size: 9pt;
-	color: #555;
-	font-family: 'News Cycle', arial, sans-serif;
+    font-style: normal;
+    font-size: 9pt;
+    color: #555;
+    font-family: 'News Cycle', arial, sans-serif;
 }
 
 
 #capa {
-	clear: left;
-	float: left;
-	width: 750px;
-	border-top: 1px dotted #C9C9C9;
-	padding-top: 10px;
+    clear: left;
+    float: left;
+    width: 750px;
+    border-top: 1px dotted #C9C9C9;
+    padding-top: 10px;
 }
 #capa p{
-	margin-top: 7px;
-	margin-bottom: 7px;
+    margin-top: 7px;
+    margin-bottom: 7px;
 }
 #banner {
     float: right;
@@ -219,44 +219,51 @@
 
 /* nuvem de TAGs */
 #tagCloud {
-	width:auto;
-	height:100%;
-	float: right;
-	margin: 0 0 15px 0;
-	padding: 10px 3px;
+    width:auto;
+    height:100%;
+    float: right;
+    margin: 0 0 15px 0;
+    padding: 10px 3px;
 }
 #tagCloud h3 {
   font-size: 12pt;
-	color: #782193;
-	border-bottom: 1px solid #8D5A9D;
-	margin-top: 0px;
-	margin-bottom: 5px;
-	padding: 0 0 5px 0;
-	font-family: 'Philosopher', helvetica, arial, sans-serif;
-	font-weight: normal;
+    color: #782193;
+    border-bottom: 1px solid #8D5A9D;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding: 0 0 5px 0;
+    font-family: 'Philosopher', helvetica, arial, sans-serif;
+    font-weight: normal;
 }
 
 #tagCloud a {
-	color: #5A116C;
-	font-family: 'Indie Flower', helvetica, arial, sans-serif;
-	margin: 0 5px 0 0;
+    color: #5A116C;
+    font-family: 'Indie Flower', helvetica, arial, sans-serif;
+    margin: 0 5px 0 0;
 }
-#tagCloud a.t_1 {	font-size: 9pt; }
-#tagCloud a.t_2 {	font-size: 10pt; }
-#tagCloud a.t_3 {	font-size: 11pt; }
-#tagCloud a.t_4 {	font-size: 12pt; }
-#tagCloud a.t_5 {	font-size: 13pt; }
-#tagCloud a.t_6 {	font-size: 14pt; }
-#tagCloud a.t_7 {	font-size: 15pt; }
-#tagCloud a.t_8 {	font-size: 17pt; }
+#tagCloud a.t_1 {   font-size: 9pt; }
+#tagCloud a.t_2 {   font-size: 10pt; }
+#tagCloud a.t_3 {   font-size: 11pt; }
+#tagCloud a.t_4 {   font-size: 12pt; }
+#tagCloud a.t_5 {   font-size: 13pt; }
+#tagCloud a.t_6 {   font-size: 14pt; }
+#tagCloud a.t_7 {   font-size: 15pt; }
+#tagCloud a.t_8 {   font-size: 17pt; }
 
 #capa #esquerda {
-	float: left;
-	width: 50%;
-	position: relative;
+    float: left;
+    width: 50%;
+    position: relative;
 }
 #capa #direita {
-	float: right;
-	position: relative;
-	width: 50%;
+    float: right;
+    position: relative;
+    width: 50%;
+}
+
+.social {
+    padding: 6px;
+    border: 1px dotted #ddd;
+    background-color: #f5f5f8;
+    margin-top: 15px;
 }
