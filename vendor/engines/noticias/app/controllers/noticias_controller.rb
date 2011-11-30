@@ -22,6 +22,7 @@ class NoticiasController < ApplicationController
     present(@page)
 
     @meta_description = @noticia.detalhe
+    @meta_title = @noticia.titulo
   end
 
 protected
