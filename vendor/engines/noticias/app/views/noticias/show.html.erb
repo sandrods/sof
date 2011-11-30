@@ -1,6 +1,6 @@
 <% content_for :body_content_title do %>
   <%= @noticia.titulo %>
-  <fb:like send="false" layout="button_count" width="450" show_faces="false" action="recommend"></fb:like>
+  <fb:like send="false" layout="button_count" width="450" show_faces="false" action="recommend" href="<%= request.url %>"></fb:like>
 <% end %>
 
 <% content_for :body_content_left do %>
