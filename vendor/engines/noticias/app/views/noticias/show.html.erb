@@ -1,5 +1,6 @@
 <% content_for :body_content_title do %>
-  <%= @noticia.titulo %>  
+  <%= @noticia.titulo %>
+  <fb:like send="false" layout="button_count" width="450" show_faces="false" action="recommend"></fb:like>
 <% end %>
 
 <% content_for :body_content_left do %>
@@ -16,11 +17,11 @@
     <h2>Outras Notícias</h2>
     <ul id="noticias">
       <% @noticias.each do |noticia| %>
-		<%- unless noticia.id == @noticia.id -%>
+        <%- unless noticia.id == @noticia.id -%>
         <li>
           <%= link_to noticia.titulo, noticia_url(noticia) %>
         </li>
-      	<% end %>
+        <% end %>
       <% end %>
     </ul>
 
