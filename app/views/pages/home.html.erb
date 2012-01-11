@@ -71,17 +71,6 @@
       <!-- direita -->
       <div id="direita">
         <div class="listaCapa">
-          <h3>Agenda</h3>
-			<%- Evento.ultimos.each do |eve| -%>
-			<p>
-				<%= link_to(eve.titulo, evento_path(eve)) %>
-				<em><%= eve.inicio.strftime("%d/%m/%Y") %> - <%= eve.local %></em>
-			</p>
-			<%- end -%>
-          <p class="leiamais"><a href="/eventos">Leia mais &#9658;</a></p>
-        </div>
-        <br />
-        <div class="listaCapa">
           <h3>Publica&ccedil;&otilde;es</h3>
 			<p>
 			<%- if Artigo.capa -%>
@@ -99,6 +88,17 @@
 		  <% end -%>
           <p class="leiamais"><a href="#leiamais">Leia mais &#9658;</a></p>
         </div>
-        
+		<br/>
+		<div class="listaCapa">
+          <h3>Agenda</h3>
+			<%- Evento.ultimos.each do |eve| -%>
+			<p>
+				<%= link_to(eve.titulo, evento_path(eve)) %>
+				<em><%= eve.inicio.strftime("%d/%m/%Y") %> - <%= eve.local %></em>
+			</p>
+			<%- end -%>
+          <p class="leiamais"><a href="/eventos">Leia mais &#9658;</a></p>
+        </div>
+
       </div>
     </div>
