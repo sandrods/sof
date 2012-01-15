@@ -6,7 +6,7 @@
     <% @artigos.each do |artigo| %>
       <li>
         <%= link_to(artigo.titulo, artigo_url(artigo)) %>
-        <%= image_fu(artigo.imagem, :pub, :align=>"right") %>
+        <%= image_fu(artigo.imagem, :fat, :align=>"right") %>
 
 		<small>Publicado em <%= artigo.created_at.strftime('%d/%m/%Y, às %H:%M')%></small>
       </li>
