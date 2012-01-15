@@ -1,4 +1,4 @@
-<h2><%= t('.title') %></h2>
+<h2><%= t('categorias.index.title') %></h2>
 <ul id='categories'>
   <% @categorias.each do |categoria| %>
     <li<%= " class='selected'" if @category.present? and @category.id == categoria.id %>>

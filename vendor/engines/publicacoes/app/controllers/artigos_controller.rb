@@ -22,7 +22,7 @@ class ArtigosController < PublicacoesController
     end
 
     def find_page
-      @page = Page.find_by_link_url("/publicacoes")
+      @page = Page.find_by_link_url("/artigos")
     end
 
 end

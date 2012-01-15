@@ -16,7 +16,7 @@ pt-BR:
         save_as_draft: Salvar como rascunho
         published_at: Data de publicação
       index:
-        no_items_yet: 'Ainda não há Posts no Blog. Clique em "%{create}" para adicionar o primeiro post.'
+        no_items_yet: 'Ainda não há Artigos nas Publicações. Clique em "%{create}" para adicionar o primeiro artigo.'
       artigo:
         view_live_html: Ver este artigo <br/><em>(será aberto em outra janela)</em>
         edit: Editar este artigo
@@ -32,16 +32,21 @@ pt-BR:
         new: Criar novo Artigo
   publicacoes:
     shared:
-      categories:
+      categorias:
         title: Categorias
       artigos:
         other: Outras Publicações
-        created_at: 'Postado em %{when}'
+        created_at: 'Publicado em %{when}'
         read_more: Continue lendo...
-    categories:
+    categorias:
       show:
-        no_posts: Não há posts aqui ainda.
+        no_posts: Não há artigos aqui ainda.
+  categorias:
+    show:
+      other: Outras Categorias
+      no_posts: Não há artigos publicados aqui ainda.
+    index:
+      title: Categorias
   artigos:
     show:
-      other: Outras Publicações
-
+      other: Outras Publicações    
