@@ -477,6 +477,47 @@ ul.fat li small {
 	color: #888;
 }
 
+
+ul.art {
+	border-top: 1px solid #db4143;
+	float: left;
+	margin: 10px 0 20px 0;
+}
+
+ul.art li{
+	border-bottom: 1px solid #db4143;
+	padding: 15px 0;
+	float: left;
+}
+
+ul.art li a{
+	color: #5A116C;
+	font-size: 12pt;
+	font-weight: bold;
+	float: left;
+	width: 600px;
+	margin-bottom:1px;
+}
+ul.art li p{
+	color: #555;
+	font-size: 10pt;
+	font-weight: normal;
+	margin: 0 !important;
+	float: left;
+	width: 800px;
+}
+ul.art li img {
+	float: right;
+	margin:0;
+	vertical-align: top;
+}
+ul.art li small {
+	float: left;
+	width: 800px;
+	margin-bottom:5px;
+	color: #888;
+}
+
 div.filtro {
 	border-top: 1px solid #db4143;
 	padding-top: 10px;
