@@ -17,6 +17,7 @@
 	<h3>Não foram encontradas artigos</h3>
     <br/>
   <%- end -%>
+<%- end -%>
 
 <% content_for :body_content_right do %>
   <%= @page[Page.default_parts.second.to_sym].html_safe if Page.default_parts.many? %>
