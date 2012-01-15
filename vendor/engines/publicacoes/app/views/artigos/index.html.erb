@@ -1,14 +1,22 @@
 <% content_for :body_content_left do %>
   <%= @page[Page.default_parts.first.to_sym].html_safe if Page.default_parts.any? %>
 
-  <% if @artigos.any? %>
-    <section id="blog_posts">
-      <%= render :partial => "/shared/artigo", :collection => @artigos %>
-    </section>
-  <% else %>
-    <p><%= t('.no_blog_articles_yet') %></p>
-  <% end %>
-<% end %>
+  <%- if @artigos.present? -%>
+  <ul id="noticias" class="fat">
+    <% @artigos.each do |artigo| %>
+      <li>
+        <%= link_to(artigo.titulo, artigo_url(artigo)) %>
+        <%= image_fu(artigo.imagem, :pub, :align=>"right") %>
+
+		<small>Publicado em <%= artigo.created_at.strftime('%d/%m/%Y, às %H:%M')%></small>
+      </li>
+    <% end %>
+  </ul>
+  <%- else -%>
+    <br/>
+	<h3>Não foram encontradas artigos</h3>
+    <br/>
+  <%- end -%>
 
 <% content_for :body_content_right do %>
   <%= @page[Page.default_parts.second.to_sym].html_safe if Page.default_parts.many? %>
@@ -19,3 +27,7 @@
 
 <%= render :partial => "/shared/content_page" %>
 <% content_for :stylesheets, stylesheet_link_tag('refinerycms-publicacoes') %>
+
+
+
+
