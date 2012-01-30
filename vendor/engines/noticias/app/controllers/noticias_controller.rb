@@ -3,7 +3,7 @@ class NoticiasController < ApplicationController
   before_filter :find_page
 
   def index
-    if params[:filtro]
+    if params[:filtro].present?
       @noticias = Noticia.with_query(params[:filtro]).order("data DESC").paginate(:page => (params[:page]||1), :per_page => 10)
     else
       find_all_noticias
