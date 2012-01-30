@@ -1,7 +1,7 @@
 pt-BR:
   plugins:
     portfolio:
-      title: Pasta
+      title: Galeria
   admin:
     portfolio:
       index:
