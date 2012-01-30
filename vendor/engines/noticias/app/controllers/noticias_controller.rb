@@ -4,7 +4,7 @@ class NoticiasController < ApplicationController
 
   def index
     if params[:filtro]
-      @noticias = Noticia.with_query(params[:filtro]).order("data DESC")
+      @noticias = Noticia.with_query(params[:filtro]).order("data DESC").paginate(:page => (params[:page]||1), :per_page => 10)
     else
       find_all_noticias
     end
@@ -28,7 +28,7 @@ class NoticiasController < ApplicationController
 protected
 
   def find_all_noticias
-    @noticias = Noticia.order("data DESC").limit(10).all
+    @noticias = Noticia.order("data DESC").paginate(:page => (params[:page]||1), :per_page => 10)
   end
 
   def find_page
