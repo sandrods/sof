@@ -13,6 +13,7 @@
   </div>
 
   <%- if @noticias.present? -%>
+  <%= will_paginate @noticias %>
   <ul id="noticias" class="fat">
     <% @noticias.each do |noticia| %>
       <li>
@@ -30,6 +31,7 @@
     <br/>
   <%- end -%>
 
+  <%= will_paginate @noticias %>
 <% end %>
 
 <%= render :partial => "/shared/content_page" %>
