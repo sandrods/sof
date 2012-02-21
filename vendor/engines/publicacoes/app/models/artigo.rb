@@ -42,7 +42,7 @@ class Artigo < ActiveRecord::Base
   end
 
   def self.capa2
-    Artigo.order("data DESC").limit(2).offset(1)
+    Artigo.order("data DESC").limit(2).offset(1).limit(1)
   end
 
 end
