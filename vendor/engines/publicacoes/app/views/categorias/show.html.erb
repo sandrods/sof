@@ -3,18 +3,23 @@
 <% end %>
 
 <% content_for :body_content_left do %>
-  <% if @categoria.artigos.any? %>
-  <article id="blog_posts">
-    <ul>
-    <%= render :partial => "/shared/artigo", :collection => @categoria.artigos %>
-    </ul>
-  </article>
-  <% else %>
-    <p>
-      <%= t('.no_posts') %>
-    </p>
-  <% end %>
-<% end %>
+  <%- if @categoria.artigos.present? -%>
+  <ul id="artigos" class="art">
+    <% @categoria.artigos.each do |artigo| %>
+      <li>
+        <%= link_to(artigo.titulo, artigo_url(artigo)) %>
+        <%= image_fu(artigo.imagem, :fat, :align=>"right") %>
+		<small>Publicado em <%= artigo.created_at.strftime('%d/%m/%Y, às %H:%M')%></small>
+      </li>
+    <% end %>
+  </ul>
+  <%- else -%>
+    <br/>
+	<h3>Não foram encontradas artigos</h3>
+    <br/>
+  <%- end -%>
+<%- end -%>
+
 
 <% content_for :body_content_right do %>
   <aside>
