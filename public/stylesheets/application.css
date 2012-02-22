@@ -540,8 +540,24 @@ div.filtro input.text {
 	width: 250px;
 }
 
-div.eventos p {
+ul#eventos {
+	padding: 5px 0 0 0;
 
+}
+
+ul#eventos li {
+    border-bottom: 1px solid #DB4143;
+    float: left;
+    padding: 15px 0;
+}
+
+ul#eventos .titulo a{
+    color: #5A116C;
+    float: left;
+    font-size: 12pt;
+    font-weight: bold;
+    margin-bottom: 1px;
+    width: 800px;
 }
 
 dl {

@@ -1,8 +1,9 @@
 <% content_for :body_content_left do %>
   <ul id="eventos">
     <% @eventos.each do |evento| %>
-      <li>
-        <%= link_to "#{evento.inicio.strftime('%d/%m/%Y')} - #{evento.titulo}", evento_url(evento) %>      
+      <li><div class="titulo"><%= link_to evento.titulo, evento_url(evento) %></div>
+        Data: <%= evento.inicio.strftime('%d/%m/%Y') %><br/>
+	Local: <%= evento.local %><br/>
         <%=raw evento.lead %>
       </li>
     <% end %>
