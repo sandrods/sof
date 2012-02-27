@@ -232,7 +232,8 @@
     margin-top: 0px;
     margin-bottom: 5px;
     padding: 0 0 5px 0;
-    font-family: 'Philosopher', helvetica, arial, sans-serif;
+    /*font-family: 'Philosopher', helvetica, arial, sans-serif;*/
+    font-family: helvetica, arial, sans-serif;
     font-weight: normal;
 }
 
