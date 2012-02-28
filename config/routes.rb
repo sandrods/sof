@@ -4,7 +4,7 @@ Sof::Application.routes.draw do
   
   resources :tags
 
-  match 'contato' => 'contact'
+  match 'contato' => 'inquiries#new'
   
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
