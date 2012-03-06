@@ -7,6 +7,9 @@
   <%= image_fu(@artigo.imagem, nil, :style=>"margin-top: 20px; float: left;") %>
 
 	<div class="download">
+		<label>Descrição</label>
+		<%= raw @artigo.descricao %>
+		
 		<label>Arquivo</label>
   		<h3><%= link_to("#{@artigo.arquivo.title} (#{number_to_human_size(@artigo.arquivo.size)})", @artigo.arquivo.url) %></h3>
 
