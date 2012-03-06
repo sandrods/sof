@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110824120922) do
+ActiveRecord::Schema.define(:version => 20120306142340) do
 
   create_table "artigos", :force => true do |t|
     t.string   "titulo"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(:version => 20110824120922) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "imagem_id"
+    t.text     "descricao"
   end
 
   add_index "artigos", ["id"], :name => "index_artigos_on_id"
@@ -148,10 +149,10 @@ ActiveRecord::Schema.define(:version => 20110824120922) do
   create_table "page_translations", :force => true do |t|
     t.integer  "page_id"
     t.string   "locale"
-    t.string   "meta_keywords"
     t.string   "browser_title"
-    t.text     "meta_description"
+    t.string   "meta_keywords"
     t.string   "title"
+    t.text     "meta_description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -207,8 +208,8 @@ ActiveRecord::Schema.define(:version => 20110824120922) do
   create_table "portfolio_entry_translations", :force => true do |t|
     t.integer  "portfolio_entry_id"
     t.string   "locale"
-    t.text     "body"
     t.string   "title"
+    t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -262,7 +263,7 @@ ActiveRecord::Schema.define(:version => 20110824120922) do
   end
 
   add_index "slugs", ["locale"], :name => "index_slugs_on_locale"
-  add_index "slugs", ["name", "sluggable_type", "scope", "sequence"], :name => "index_slugs_on_name_sluggable_type_scope_and_sequence", :unique => true
+  add_index "slugs", ["name", "sluggable_type", "scope", "sequence"], :name => "index_slugs_on_name_sluggable_type_scope_and_sequence"
   add_index "slugs", ["sluggable_id"], :name => "index_slugs_on_sluggable_id"
 
   create_table "taggings", :force => true do |t|
@@ -300,7 +301,7 @@ ActiveRecord::Schema.define(:version => 20110824120922) do
   end
 
   add_index "user_plugins", ["name"], :name => "index_user_plugins_on_title"
-  add_index "user_plugins", ["user_id", "name"], :name => "index_unique_user_plugins", :unique => true
+  add_index "user_plugins", ["user_id", "name"], :name => "index_unique_user_plugins"
 
   create_table "users", :force => true do |t|
     t.string   "username",             :null => false

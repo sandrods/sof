@@ -11,6 +11,11 @@
   </div>
 
   <div class='field'>
+    <%= f.label :descricao, "Descrição" -%>
+    <%= f.text_area :descricao, :class => "wymeditor widest", :rows => 5 %>
+  </div>
+
+  <div class='field'>
     <%= f.label :categoria_id, "Categoria" -%>
     <%= f.select :categoria_id, Categoria.to_select, { :prompt => "--> Selecione uma Categoria" }, :class => 'big' -%>
   </div>
