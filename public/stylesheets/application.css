@@ -656,3 +656,39 @@ dl dd {
   border-left-width: 1px;
 
 }
+
+.inquiries form label {
+   width: 150px;
+   float: left;
+   color: #555555;
+   font-size: 11pt;
+   font-weight: normal;
+}
+
+.inquiries form input , .inquiries form textarea {
+    background-color: #F2DAF7;
+    border: 1px solid #D08DDD;
+    font-size: 10pt;
+    padding: 5px;
+    width: 400px;
+}
+
+.inquiries form .field {
+   margin: 12px 0px;
+}
+
+.inquiries form .actions {
+   margin-left: 150px;
+}
+
+.inquiries form .actions input {
+    background-color: #F5F5F8;
+    border: 1px outset #CCCCCC;
+    color: #666666;
+    font: bold 10px Verdana,Arial,Helvetica,sans-serif;
+    width: 150px;
+}
+
+.errorExplanation {
+   color: red; 
+}
