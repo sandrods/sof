@@ -20,7 +20,7 @@ class TextosController < ApplicationController
 protected
 
   def find_all_textos
-    @textos = Texto.find(:all, :order => "position ASC")
+    @textos = Texto.find(:all, :order => "position ASC").paginate(:page => (params[:page]||1), :per_page => 10)
   end
 
   def find_page

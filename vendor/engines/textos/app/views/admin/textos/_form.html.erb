@@ -49,8 +49,15 @@
   <%= render :partial => "/shared/admin/form_actions",
               :locals => {
                 :f => f,
-                :continue_editing => false,
+                :continue_editing => true,
                 :delete_title => t('delete', :scope => 'admin.textos.texto'),
                 :delete_confirmation => t('message', :scope => 'shared.admin.delete', :title => @texto.titulo)
               } %>
 <% end -%>
+<% content_for :javascripts do %>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end %>
