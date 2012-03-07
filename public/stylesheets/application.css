@@ -495,7 +495,7 @@ ul.art li a{
 	font-size: 12pt;
 	font-weight: bold;
 	float: left;
-	width: 600px;
+	width: 300px;
 	margin-bottom:1px;
 }
 ul.art li p{
@@ -504,7 +504,7 @@ ul.art li p{
 	font-weight: normal;
 	margin: 0 !important;
 	float: left;
-	width: 600px;
+	width: 300px;
 }
 ul.art li img {
 	float: right;
@@ -513,7 +513,7 @@ ul.art li img {
 }
 ul.art li small {
 	float: left;
-	width: 600px;
+	width: 300px;
 	margin-bottom:5px;
 	color: #888;
 }
