@@ -2,7 +2,7 @@
   <%= @page[Page.default_parts.first.to_sym].html_safe if Page.default_parts.any? %>
 
   <%- if @artigos.present? -%>
-  <ul id="artigos" class="art">
+  <ul id="noticias" class="fat">
     <% @artigos.each do |artigo| %>
       <li>
         <%= link_to(artigo.titulo, artigo_url(artigo)) %>
