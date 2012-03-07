@@ -6,10 +6,10 @@
     <% @artigos.each do |artigo| %>
       <li>
         <%= link_to(artigo.titulo, artigo_url(artigo)) %>
-        <%= raw artigo.descricao %>
         <%= image_fu(artigo.imagem, :fat, :align=>"right") %>
 
 		<small>Publicado em <%= artigo.created_at.strftime('%d/%m/%Y, às %H:%M')%></small>
+        <%= raw artigo.descricao %>
       </li>
     <% end %>
   </ul>
