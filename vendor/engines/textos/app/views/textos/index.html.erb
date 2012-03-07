@@ -1,11 +1,30 @@
-<% content_for :body_content_left do %>
-  <ul id="textos">
+<%= render :partial => "/shared/content_page" %>
+
+<% content_for :body_content_title do %>
+  Artigos
+<% end %>
+
+<% content_for :body_content_full do %>
+
+  <%- if @textos.present? -%>
+
+  <ul id="noticias" class="fat">
     <% @textos.each do |texto| %>
       <li>
-        <%= link_to texto.titulo, texto_url(texto) %>
+        <%= link_to(texto.titulo, texto_url(texto)) %>
+                <small>Publicado em <%= texto.publicacao.strftime('%d/%m/%Y, às %H:%M')%></small>
+        <%= raw texto.lead %>
       </li>
     <% end %>
   </ul>
+  <%= will_paginate @textos %>
+  <%- else -%>
+    <br/>
+        <h3>Não foram encontrados artigos</h3>
+    <br/>
+  <%- end -%>
+
 <% end %>
 
 <%= render :partial => "/shared/content_page" %>
+

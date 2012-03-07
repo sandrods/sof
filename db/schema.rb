@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120306142340) do
+ActiveRecord::Schema.define(:version => 20120307012300) do
 
   create_table "artigos", :force => true do |t|
     t.string   "titulo"
@@ -290,6 +290,8 @@ ActiveRecord::Schema.define(:version => 20120306142340) do
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "lead"
+    t.text     "corpo"
   end
 
   add_index "textos", ["id"], :name => "index_textos_on_id"

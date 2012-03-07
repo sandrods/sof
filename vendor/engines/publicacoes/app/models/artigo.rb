@@ -5,7 +5,7 @@ class Artigo < ActiveRecord::Base
   belongs_to :imagem, :class_name => 'Image'
   belongs_to :arquivo, :class_name => 'Resource'
 
-  acts_as_indexed :fields => [:titulo]
+  acts_as_indexed :fields => [:titulo, :descricao]
   
   alias_attribute :title, :titulo
 
