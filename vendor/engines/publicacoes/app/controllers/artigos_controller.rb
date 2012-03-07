@@ -18,7 +18,7 @@ class ArtigosController < PublicacoesController
   protected
 
     def find_all_artigos
-      @artigos = Artigo.order("data DESC").all.paginate(:page => (params[:page]||1), :per_page => 5)
+      @artigos = Artigo.order("data DESC").all.paginate(:page => (params[:page]||1), :per_page => 4)
     end
 
     def find_page
