@@ -6,6 +6,7 @@ Sof::Application.routes.draw do
 
   match 'contato' => 'inquiries#new'
   match "/marcha" => redirect("http://sof.org.br/marcha")
+  match "/acao2010" => redirect("http://sof.org.br/acao2010")
   
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
