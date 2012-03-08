@@ -9,10 +9,10 @@
 	<div class="download">
 		<label>Descrição</label>
 		<%= raw @artigo.descricao %>
-		
+	        <% if @artigo.arquivo.present? %>	
 		<label>Arquivo</label>
-  		<h3><%= link_to("#{@artigo.arquivo.title} (#{number_to_human_size(@artigo.arquivo.size)})", @artigo.arquivo.url) %></h3>
-
+  		<h3><%= link_to("#{@artigo.arquivo.try(:title)} (#{number_to_human_size(@artigo.arquivo.try(:size))})", @artigo.arquivo.try(:url)) %></h3>
+                <% end %>
 		<label>Categoria</label>
 		<%= @artigo.categoria.titulo %>
   		
