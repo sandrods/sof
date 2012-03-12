@@ -9,7 +9,7 @@
       <li>
         <%= link_to(artigo.titulo, artigo_url(artigo)) %>
         <%= image_fu(artigo.imagem, :fat, :align=>"right") %>
-		<small>Publicado em <%= artigo.created_at.strftime('%d/%m/%Y, às %H:%M')%></small>
+		<small>Publicado em <%= artigo.data.strftime('%d/%m/%Y, às %H:%M')%></small>
       </li>
     <% end %>
   </ul>
