@@ -2,7 +2,7 @@ class PagesController < ApplicationController
 
   # This action is usually accessed with the root path, normally '/'
   def home
-    @tags = Tag.tags
+    @tags = Tag.tags({:order=>"count desc",:limit=>10})
     error_404 unless (@page = Page.where(:link_url => '/').first).present?
   end
 
