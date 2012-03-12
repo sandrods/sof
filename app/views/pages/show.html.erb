@@ -1,6 +1,6 @@
 <section id='body_content'>
    <% if @page[:title].present? %>
-  <h1 id='body_content_title'>@page[:title]</h1>
+  <h1 id='body_content_title'><%=@page[:title]%></h1>
    <% end %>
   <%=raw @page[:body] %>
 </section>
