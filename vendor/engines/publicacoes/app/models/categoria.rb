@@ -1,6 +1,6 @@
 class Categoria < ActiveRecord::Base
 
-  has_many :artigos
+  has_many :artigos, :order => "data desc"
 
   acts_as_indexed :fields => [:titulo]
 
